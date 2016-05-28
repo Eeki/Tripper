@@ -1,5 +1,5 @@
-import initialAttractions from '../../data/attractions'
-import { TOGGLE_ATTRACTION } from '../actions/const.js'
+import { initialAttractions } from '../../data/attractions'
+import { TOGGLE_ATTRACTION } from '../actions/const'
 
 const INIT_ATTRACTIONS = 'INIT_ATTRACTIONS';
 
@@ -17,10 +17,13 @@ export const attractionsReducer = (attractions = initialAttractions, action = IN
         }
       });
     default:
-      return attractions().map((attraction, index) => {
-        return Object.assign({}, attraction, {
-          id: index
+      if (attractions[0].selected === undefined) {
+        return attractions.map((attraction, index) => {
+          return Object.assign({}, attraction, {
+            id: index,
+            selected: false
+          });
         });
-      });
+      }
   }
 }

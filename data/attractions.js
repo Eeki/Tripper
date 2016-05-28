@@ -1,5 +1,4 @@
-export default function() {
-  return [
+export const initialAttractions = [
     {
       "name": "Alexander Theatre",
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Alexander_Theater.JPG/640px-Alexander_Theater.JPG",
@@ -335,14 +334,5 @@ export default function() {
       "minDuration": 90,
       "price": 4,
       "description": "Vermo is the main harness racing track of Finland, opened in 1977. It is located in the Leppävaara district of Espoo, but is officially regarded as the racecourse of the neighbouring Helsinki. Length of the track is 1000 metres and width 24–26 metres. Notable race is Finlandia-Ajo."
-    },
-    {
-      "name": "",
-      "thumbnailUrl": "", // pikkukuvan osoite
-      "address": "",
-      "minDuration": 15, // suositeltu minimivierailuaika minuutteina
-      "price": 0, // pääsylipun hinta euroina
-      "description": ""
     }
   ]
-}
