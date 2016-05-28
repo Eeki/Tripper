@@ -9,7 +9,7 @@ export default (
   <Route path="/" component={App} >
     <IndexRoute component={FormWrapper} />
     <Route path="infoform" component={FormWrapper} />
+    <Route path="attractionsform" component={AttractionsForm} />
     <Route path="map" component={MapWrapper} />
-    <Route path="/attractionsform" component={AttractionsForm} />
   </Route>
 );

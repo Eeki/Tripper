@@ -1,7 +1,7 @@
 {
-  "name": "mapBoxGlTreeni",
+  "name": "Tripper",
   "version": "0.0.1",
-  "description": "mapBoxGl sandbox",
+  "description": "Tripper at Reittiopas hackathon",
   "main": "index.js",
   "repository": "",
   "scripts": {
@@ -37,6 +37,7 @@
     "classnames": "^2.2.5",
     "d3": "^3.5.17",
     "flexboxgrid": "^6.3.0",
+    "graphql-client": "^1.0.4",
     "immutable": "^3.8.1",
     "jquery": "^2.2.3",
     "jsdom": "^8.5.0",
@@ -53,6 +54,7 @@
     "redux": "^3.5.2",
     "redux-form": "^5.2.5",
     "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.1.0",
     "webpack": "^1.13.0"
   }
 }

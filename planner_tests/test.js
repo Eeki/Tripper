@@ -193,3 +193,13 @@ graphQLHSLClient.query(query_base)
         console.log(reason)
     })
 ;
+
+
+function optimize(hotel, attractions, arrivalTime, departureTime) {
+    return time
+}
+
+function getFullRoute(hotel, attractions, arrival) {
+    // optimize first again
+    //
+}
