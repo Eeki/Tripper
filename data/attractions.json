@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Sibelius-monumentti",
+    "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/fi/thumb/1/12/SibeliusMonumenthelsinki2011.JPG/320px-SibeliusMonumenthelsinki2011.JPG", // pikkukuvan osoite
+    "address": "Sibeliuksen puisto, Mechelininkatu, 00250 Helsinki",
+    "minDuration": 15, // suositeltu minimivierailuaika minuutteina
+    "price": 0, // pääsylipun hinta euroina
+    "description": "Veistos painaa 24 tonnia ja siinä on yli 600 putkea. Monumentti on 8,5 metriä korkea, 10,5 metriä pitkä ja 6,5 metriä syvä. Se on Helsingin suosituimpia veistoksia ja tunnetuimpia matkailunähtävyyksiä."
+  },
+  {
+    "name": "",
+    "thumbnailUrl": "",
+    "address": "",
+    "minDuration": 0,
+    "price": 0,
+    "description": ""
+  }
+]
