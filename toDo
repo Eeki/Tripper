@@ -1,0 +1,9 @@
+ui
+  nav-bar
+  calculate-button
+
+magic
+  preload attraction images while filling prefs
+
+style
+  mixins
