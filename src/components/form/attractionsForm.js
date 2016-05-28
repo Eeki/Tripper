@@ -5,7 +5,7 @@ export default class AttractionsForm extends Component {
   render() {
     return (
       <div>
-        Attractions
+        <h2>Choose attractions</h2>
       </div>
     )
   }
