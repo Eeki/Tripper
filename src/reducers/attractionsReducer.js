@@ -1,9 +1,7 @@
 import { attractions } from '../../data/attractions'
 import { TOGGLE_ATTRACTION } from '../actions/const'
 
-const INIT_ATTRACTIONS = 'INIT_ATTRACTIONS';
-
-export const attractionsReducer = (state = attractions, action = INIT_ATTRACTIONS) => {
+export const attractionsReducer = (state = attractions, action) => {
 
   switch (action.type) {
     case TOGGLE_ATTRACTION:

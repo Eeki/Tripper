@@ -69,7 +69,7 @@ export default function() {
       },
       {
           "name": "Hellsten Helsinki Senate - Penthouse",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/max1024x768/158/15857645.jpg",
           "address": "Kauppiaankatu 5,  00160",
           "coords": {
               "lat": 24.965199,
@@ -80,73 +80,73 @@ export default function() {
       },
       {
           "name": "AEL-Hotelli",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "https://www.ael.fi/sites/default/files/styles/page_slider/public/aelhotelli.jpg?itok=gvhfXZj7",
           "address": "Jälsitie 5,  00410",
           "coords": {
               "lat": 24.854622,
               "lon": 60.249245
           },
           "description": "Accomodation in a quiet environment, AEL-Hotel is situated close to the AEL Center for Technical Training in Malminkartano, approx. 10 km from the Helsinki city centre.",
-          "price": 88
+          "price": 160
       },
       {
           "name": "Original Sokos Hotel Helsinki",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/481/48159164.jpg",
           "address": "Kluuvikatu 8,  00100",
           "coords": {
               "lat": 24.94677,
               "lon": 60.169586
           },
           "description": "Honest, easy-going and a favourite with staying power, Original Sokos Hotel Helsinki is located on the pulse of the city, between Ateneum Art Museum and Senate Square in the centre of the capital with its busy shopping area. All hotel rooms have a youthful Scandinavian theme. Its cosy Fransmanni and Memphis restaurants serve a versatile menu in a relaxed atmosphere. Customers can use the newly opened EasyFit gym, for a low-price charge. On the highest storey, above the rooftops of Helsinki, you'll find cosy sauna facilities for the enjoyment of business travellers and holidaymakers alike. You can't get any closer to the heart of Helsinki than this. Welcome!",
-          "price": 128
+          "price": 154
       },
       {
           "name": "Original Sokos Hotel Pasila",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/150/15031928.jpg",
           "address": "Maistraatinportti 3,  00240",
           "coords": {
               "lat": 24.925825,
               "lon": 60.19906
           },
           "description": "The hospitable Original Sokos Hotel Pasila is situated right next to the action, close to he vicinity of Helsinki Exhibition and Convention Centre, Hartwall Arena, Linnanmäki Amusement Park and Helsinki's Central Park. Easily accessible, the hotel has good train, tram and bus connections, which makes it a favourite of exhibition, conference and sports event visitors. The hotel's versatile range of facilities includes accommodation, meeting and restaurant services and comfortable saunas. Welcome to easy-going Pasila!",
-          "price": 98
+          "price": 141
       },
       {
           "name": "Radisson Blu Aleksanteri Hotel",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/657/65784731.jpg",
           "address": "Albertinkatu 34,  00180",
           "coords": {
               "lat": 24.933126,
               "lon": 60.164043
           },
           "description": "The old building offers individual, high-quality rooms and many memorable details. For instance, the hotel boasts a Rock 'n Rose room, designed by Finnish rock music icon Remu Aaltonen, as well as burlesque art and Scandinavian design. Aleksanteri shows a classy collection of great styles. Individual, pleasantly surprising and always in tune with the times, the hotel's individual service has earned praise.",
-          "price": 152
+          "price": 202
       },
       {
           "name": "Hilton Helsinki Kalastajatorppa",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/382/38287404.jpg",
           "address": "Kalastajatorpantie 1,  00330",
           "coords": {
               "lat": 24.873566,
               "lon": 60.19224
           },
           "description": "Hilton Helsinki Kalastajatorppa has a long and diverse history. Many international conferences and events have been held here during the years. The unique surroundings, tasteful decoration, high-class restaurants and diverse meeting and banquet rooms together create exciting atmosphere for hotel stays and events of all kinds.",
-          "price": 234
+          "price": 129
       },
       {
           "name": "Kotihotelli Oy",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/max1024x768/576/57628163.jpg",
           "address": "Uudenmaankatu 26,  00120",
           "coords": {
               "lat": 24.93925,
               "lon": 60.163544
           },
           "description": "Kotihotelli can offer homelike accommodation for longer or shorter periods of stay. The flats are situated in the city of Helsinki, some in the heart of the city, others further from the city centre.",
-          "price": 66
+          "price": 110
       },
       {
           "name": "Hotel Haven",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/659/65934325.jpg",
           "address": "Unioninkatu 17,  00130",
           "coords": {
               "lat": 24.95169,
@@ -157,7 +157,7 @@ export default function() {
       },
       {
           "name": "Best Western Hotel Rantapuisto",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/316/31627749.jpg",
           "address": "Ramsinniementie 16,  00980",
           "coords": {
               "lat": 25.112253,
@@ -168,7 +168,7 @@ export default function() {
       },
       {
           "name": "Scandic Grand Marina",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/557/5579066.jpg",
           "address": "Katajanokanlaituri 7,  00160",
           "coords": {
               "lat": 24.964354,
@@ -179,14 +179,14 @@ export default function() {
       },
       {
           "name": "GLO Hotel Art",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/143/14360286.jpg",
           "address": "Lönnrotinkatu 29,  00180",
           "coords": {
               "lat": 24.931793,
               "lon": 60.164345
           },
           "description": "The new GLO Hotel Art is a unique combination of a 1903-built Art Nouveau castle, with its variety of charming meeting and event facilities, and a new modern hotel. The stylish and modern 170 rooms of the hotel have been created together with Finnish designers. The individual needs of the customers have been taken into account when designing the range of services available for business visitors and families.",
-          "price": 189
+          "price": 129
       },
       {
           "name": "Hotelli Avion",
@@ -201,25 +201,25 @@ export default function() {
       },
       {
           "name": "Eurohostel Oy",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/558/5583842.jpg",
           "address": "Linnankatu 9,  00160",
           "coords": {
               "lat": 24.969866,
               "lon": 60.165825
           },
           "description": "Eurohostel is one of the largest hostels in Scandinavia open all year around. This city hostel is located close to the sea in central Helsinki - in a unique part of the town surrounded by Art Nouveau buildings and old red brick warehouses. The market square, sights, shops and restaurants of the city centre are all within walking distance and passenger ferries to Sweden, Estonia and Russia are only a few steps away. Eurohostel is also easy to reach by trams that arrive right next to the hostel. All the floors are equipped with a self-service kitchen, showers and washroom facilities for men and women. The reception is always open.",
-          "price": 42
+          "price": 58
       },
       {
           "name": "ApartmentHelsinki",
-          "thumbnailUrl": "",
+          "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/max1024x768/673/67319008.jpg",
           "address": "Helsinginkatu 17,  00500",
           "coords": {
               "lat": 24.954327,
               "lon": 60.187492
           },
           "description": "This very recently renovated studio apartment has a fully equipped kitchen and a bathroom with shower. Accomodating up to 3 persons. Smoking is prohibited. In the apartment there is a dish washer, washing machine, TV, stereo equipment, w-lan, linen, towels and kitchenware, all included in the room rate.",
-          "price": 67
+          "price": 109
       }
   ]
 }
