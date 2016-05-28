@@ -29,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: "style-loader!css-loader"
+        loader: "style-loader!css-loader",
       },
       {
         test: /\.scss$/,
@@ -43,29 +43,3 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ]
 };
-
-
-
-/*module.exports = {
- entry: [
- './src/index.js'
- ],
- output: {
- path: __dirname,
- publicPath: '/',
- filename: 'bundle.js'
- },
- module: {
- loaders: [{
- exclude: /node_modules/,
- loader: 'babel'
- }]
- },
- resolve: {
- extensions: ['', '.js', '.jsx']
- },
- devServer: {
- historyApiFallback: true,
- contentBase: './'
- }
- };*/
