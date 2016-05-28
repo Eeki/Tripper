@@ -20,7 +20,7 @@ const initialState = [
               {
                 startTime: 1464426014000,
                 endTime: 1464426370000,
-                geometry: "_tlnJm`fwC_@NOF@L@H@PFfADhC@TT|DBh@?BFdAJvADp@Dt@HtA?DDr@@H@FJrB@D???B?DBVB\\D|@FfATI"
+                geometry: "_tlnJm`fwC_@NOF@L@H@PFfADhC@TT|DBh@?BFdAJvADp@Dt@HtA?DDr@@H@FJrB@D???B?DBVB\\D|@FfATI",
                 mode: "WALK"
               },
               {
@@ -37,7 +37,7 @@ const initialState = [
           {
             goal: {
               type: LUNCH,
-            }
+            },
             duration: 100
           }
         ]
@@ -152,7 +152,7 @@ const initialState = [
 ];
 
 
-export const tripReducer = (state=initialState, action) {
+export const tripReducer = (state=initialState, action) => {
   switch (action.type) {
     default:
       return state;
