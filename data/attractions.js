@@ -112,14 +112,6 @@ export const attractions = [
       "description": "The University of Helsinki Botanic Garden at Kaisaniemi is one of Helsinki's most popular visitor attractions. The garden is situated very close to the city centre, and its glasshouses and surrounding grounds offer nature lovers a unique experience all year round. The gallery between the large and small glasshouses is used to host temporary exhibitions, mostly on themes related to nature."
     },
     {
-      "name": "Helsinki-Malmi airport",
-      "thumbnailUrl": "",
-      "address": "",
-      "minDuration": 0,
-      "price": 0,
-      "description": ""
-    },
-    {
       "name": "Heureka, the Finnish Science Centre",
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Vantaa-heureka.jpg",
       "address": "Kuninkaalantie 7, Tikkurila,  01300 Vantaa",
@@ -294,14 +286,6 @@ export const attractions = [
       "minDuration": 20,
       "price": 0,
       "description": "Hakaniemen kaksikerroksinen halli on eloisa, aktiivinen ja perinteikäs halli. Hallin alakerrassa myydään elintarvikkeita ja toisessa kerroksessa käsitöitä, lahjatavaroita ja keraamikkaa."
-    },
-    {
-      "name": "The Old Market Hall",
-      "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Antiguo_Mercado_de_Helsinki%2C_Finlandia%2C_2012-08-14%2C_DD_01.JPG/640px-Antiguo_Mercado_de_Helsinki%2C_Finlandia%2C_2012-08-14%2C_DD_01.JPG",
-      "address": "",
-      "minDuration": 20,
-      "price": 0,
-      "description": "Vanha kauppahalli on Suomen vanhin kauppahalli. Hallissa on myynnissä erilaisia elintarvikkeita. Hallissa on myös useita ravintoloita."
     },
     {
       "name": "The Winter Garden",
