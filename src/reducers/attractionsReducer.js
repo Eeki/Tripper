@@ -1,5 +1,5 @@
 import { attractions } from '../../data/attractions'
-import { TOGGLE_ATTRACTION } from '../actions/const'
+import { TOGGLE_ATTRACTION, UPDATE_ATTRACTIONS } from '../actions/const'
 
 export const attractionsReducer = (state = attractions, action) => {
 
@@ -14,6 +14,8 @@ export const attractionsReducer = (state = attractions, action) => {
           return attraction;
         }
       });
+    case UPDATE_ATTRACTIONS:
+      return action.attractions;
     default:
       if (state[0].selected === undefined) {
         return state.map((attraction, index) => {
