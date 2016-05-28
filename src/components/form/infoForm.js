@@ -55,7 +55,7 @@ class InfoForm extends Component {
             </button>
           </div>*/}
         </form>
-        <Paper className="fixed-bottom">
+        <Paper rounded={false} className="fixed-bottom">
           <Link to="/attractionsForm"><FlatButton label="Next" primary={true}/></Link>
         </Paper>
       </div>

@@ -5,6 +5,7 @@ import FlatButton from 'material-ui/FlatButton'
 import Paper from 'material-ui/Paper'
 import { List, ListItem } from 'material-ui/List'
 import Checkbox from 'material-ui/Checkbox'
+import Avatar from 'material-ui/Avatar'
 
 import { toggleAttraction } from '../../actions/attractions'
 
@@ -24,10 +25,11 @@ class AttractionsForm extends Component {
               key={attraction.id}
               primaryText={attraction.name} 
               rightToggle={<Checkbox onClick={() => onClick(attraction.id)} checked={attraction.selected}/>} 
+              leftAvatar={<Avatar style={{borderRadius: 0}} src={attraction.thumbnailUrl} />}
             />
           )}
         </List>
-        <Paper className="fixed-bottom">
+        <Paper rounded={false} className="fixed-bottom">
           <Link to='/infoForm'><FlatButton label='Previous'/></Link>
         </Paper>
       </div>
