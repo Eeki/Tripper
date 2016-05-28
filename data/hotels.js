@@ -2,56 +2,63 @@ export default function() {
   return [
       {
           "name": "Rastilan leirintäalue",
+          "thumbnailUrl": "https://q.bstatic.com/images/hotel/840x460/404/40411440.jpg",
           "address": "Karavaanikatu 4,  00980",
           "coords": {
               "lat": 25.12041,
               "lon": 60.20818
           },
           "description": "",
-          "price": 39
+          "price": 89
       },
       {
           "name": "Holiday Inn Helsinki Messukeskus",
+          "thumbnailUrl": "https://r.bstatic.com/images/hotel/840x460/142/14253075.jpg",
+
           "address": "Messuaukio 1,  00520",
           "coords": {
               "lat": 24.936764,
               "lon": 60.201992
           },
           "description": "Located right next door to Messukeskus Helsinki, the Holiday Inn Helsinki Messukeskus provides the guest with a truly unique, functional range of services. Convenient connections to Helsinki-Vantaa Airport, Helsinki Railway Station and downtown Helsinki puts the Holiday Inn hotel at the centre of the Finnish conference scene. Messukeskus Helsinki in connection with the hotel offers guests a wide range of exhibition and conference facilities. With its great location for business and leisure travel, this high-standard hotel offers 244 spacious rooms. Amenities include ADSL and wireless broadband connection, coffee & tea making facilities, in-room safe and an ironing center. The hotel offers free access to Minigym and Finnish sauna.",
-          "price": 119
+          "price": 109
       },
       {
           "name": "City Apartments",
+          "thumbnailUrl": "https://r.bstatic.com/images/hotel/max1024x768/645/64594933.jpg",
           "address": "Vuorikatu 18,  00100",
           "coords": {
               "lat": 24.94682,
               "lon": 60.172287
           },
           "description": "Furnished temporary housing in the Helsinki city centre. City Apartments offers a combination of all that is best about hotels and a home of your own. All apartments located in the same address in downtown Helsinki are fully furnished and equipped (renovated 2011).\nKitchen; table ware, microwave oven, stove, coffee maker, kettle, toaster, refrigerator, dishwasher.\nWashing machine, direct dial phone, spacious work area, iron/ironing board, hair dryer, wake up alarm, towel heater.\nBathroom with complimentary toiletries. Broadband Internet Access (no time restrictions or limits on amount of data transferred).\nTV with international satellite channels. Indoor parking. Apartment rates includes: bed linen and towels, weekly maid service, movie channel and broadband internet access.",
-          "price": 179
+          "price": 83
       },
       {
           "name": "Solo Sokos Hotel Torni",
+          "thumbnailUrl": "https://q.bstatic.com/images/hotel/840x460/449/44960504.jpg",
           "address": "Yrjönkatu 26,  00100",
           "coords": {
               "lat": 24.938631,
               "lon": 60.16777
           },
           "description": "Torni is a lively classic in the heart of Helsinki. As a Solo hotel, it is much more than a building and an address: it has unique character and personality. Torni's spirit is built on individual service, a comprehensive art experience and thousands of stories. Every room is a world of its own, with small details such as tile stoves, works of art and on bathtubs on claw foot pedestals. On the highest floors, impressive city views add a final touch. At the Torni Restaurant, delicious tastes meet striking visuality. The Ateljee Bar, American Bar and Irish-inspired O'Malleys are local meeting places, each with a special atmosphere of its own.",
-          "price": 208
+          "price": 139
       },
       {
           "name": "Hilton Helsinki Strand",
+          "thumbnailUrl": "https://r.bstatic.com/images/hotel/840x460/154/15488848.jpg",
           "address": "John Stenbergin ranta 4,  00530",
           "coords": {
               "lat": 24.951351,
               "lon": 60.177315
           },
           "description": "Hilton Helsinki Strand, a stylish and comfortable downtown hotel, is located by the sea, within walking distance of the city centre and the historic sights of Helsinki. The location is ideal for both business and\nholiday travellers. In addition to the bright, spacious rooms, the hotel offers versatile meeting and conference spaces for small negotiations and big dinners alike.",
-          "price": 84
+          "price": 142
       },
       {
           "name": "Next Hotel Rivoli Jardin",
+          "thumbnailUrl": "https://r.bstatic.com/images/hotel/840x460/253/2531888.jpg",
           "address": "Kasarmikatu 40,  00130",
           "coords": {
               "lat": 24.947351,
@@ -62,6 +69,7 @@ export default function() {
       },
       {
           "name": "Hellsten Helsinki Senate - Penthouse",
+          "thumbnailUrl": ,
           "address": "Kauppiaankatu 5,  00160",
           "coords": {
               "lat": 24.965199,
@@ -72,6 +80,7 @@ export default function() {
       },
       {
           "name": "AEL-Hotelli",
+          "thumbnailUrl": ,
           "address": "Jälsitie 5,  00410",
           "coords": {
               "lat": 24.854622,
@@ -82,6 +91,7 @@ export default function() {
       },
       {
           "name": "Original Sokos Hotel Helsinki",
+          "thumbnailUrl": ,
           "address": "Kluuvikatu 8,  00100",
           "coords": {
               "lat": 24.94677,
@@ -92,6 +102,7 @@ export default function() {
       },
       {
           "name": "Original Sokos Hotel Pasila",
+          "thumbnailUrl": ,
           "address": "Maistraatinportti 3,  00240",
           "coords": {
               "lat": 24.925825,
@@ -102,6 +113,7 @@ export default function() {
       },
       {
           "name": "Radisson Blu Aleksanteri Hotel",
+          "thumbnailUrl": ,
           "address": "Albertinkatu 34,  00180",
           "coords": {
               "lat": 24.933126,
@@ -112,6 +124,7 @@ export default function() {
       },
       {
           "name": "Hilton Helsinki Kalastajatorppa",
+          "thumbnailUrl": ,
           "address": "Kalastajatorpantie 1,  00330",
           "coords": {
               "lat": 24.873566,
@@ -122,6 +135,7 @@ export default function() {
       },
       {
           "name": "Kotihotelli Oy",
+          "thumbnailUrl": ,
           "address": "Uudenmaankatu 26,  00120",
           "coords": {
               "lat": 24.93925,
@@ -132,6 +146,7 @@ export default function() {
       },
       {
           "name": "Hotel Haven",
+          "thumbnailUrl": ,
           "address": "Unioninkatu 17,  00130",
           "coords": {
               "lat": 24.95169,
@@ -142,6 +157,7 @@ export default function() {
       },
       {
           "name": "Best Western Hotel Rantapuisto",
+          "thumbnailUrl": ,
           "address": "Ramsinniementie 16,  00980",
           "coords": {
               "lat": 25.112253,
@@ -152,6 +168,7 @@ export default function() {
       },
       {
           "name": "Scandic Grand Marina",
+          "thumbnailUrl": ,
           "address": "Katajanokanlaituri 7,  00160",
           "coords": {
               "lat": 24.964354,
@@ -162,6 +179,7 @@ export default function() {
       },
       {
           "name": "GLO Hotel Art",
+          "thumbnailUrl": ,
           "address": "Lönnrotinkatu 29,  00180",
           "coords": {
               "lat": 24.931793,
@@ -172,6 +190,7 @@ export default function() {
       },
       {
           "name": "Hotelli Avion",
+          "thumbnailUrl": "https://q.bstatic.com/images/hotel/840x460/693/69328873.jpg",
           "address": "Malmin asematie 6,  00700",
           "coords": {
               "lat": 25.00702,
@@ -182,6 +201,7 @@ export default function() {
       },
       {
           "name": "Eurohostel Oy",
+          "thumbnailUrl": ,
           "address": "Linnankatu 9,  00160",
           "coords": {
               "lat": 24.969866,
@@ -192,6 +212,7 @@ export default function() {
       },
       {
           "name": "ApartmentHelsinki",
+          "thumbnailUrl": ,
           "address": "Helsinginkatu 17,  00500",
           "coords": {
               "lat": 24.954327,
