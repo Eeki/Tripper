@@ -8,12 +8,14 @@ import Checkbox from 'material-ui/Checkbox'
 import Avatar from 'material-ui/Avatar'
 
 import { toggleAttraction } from '../../actions/attractions'
+import { fetchTrips } from '../../actions/trips'
 
 class AttractionsForm extends Component {
   render() {
     const {
       attractions,
-      onClick
+      calculate,
+      toggleAttraction
     } = this.props;
 
     return (
@@ -24,7 +26,7 @@ class AttractionsForm extends Component {
             <ListItem 
               key={attraction.id}
               primaryText={attraction.name} 
-              rightToggle={<Checkbox onClick={() => onClick(attraction.id)} checked={attraction.selected}/>} 
+              rightToggle={<Checkbox onClick={() => toggleAttraction(attraction.id)} checked={attraction.selected}/>} 
               leftAvatar={<Avatar style={{borderRadius: 0}} src={attraction.thumbnailUrl} />}
             />
           )}
@@ -32,13 +34,18 @@ class AttractionsForm extends Component {
         <Paper rounded={false} className="fixed-bottom">
 
           <Link to='/infoForm'>
-            <FlatButton style={{float: 'left'}} label="Previous" primary={false}/>
+            <FlatButton style={{float: 'left'}} label="Previous" primary={false} />
           </Link>
 
           <Link to='/map'>
-          <FlatButton style={{float: 'right'}} label="Next" primary={true}/>
+            <FlatButton style={{float: 'right'}} label="Next" primary={true} />
           </Link>
 
+          <FlatButton 
+            style={{float: 'right'}} 
+            label="Calculate" secondary={true} 
+            onClick={() => calculate(attractions.filter(a => a.selected))}
+          />
         </Paper>
       </div>
     )
@@ -47,7 +54,8 @@ class AttractionsForm extends Component {
 
 AttractionsForm.propTypes = {
   attractions: PropTypes.array.isRequired,
-  onClick: PropTypes.func.isRequired
+  calculate: PropTypes.func.isRequired,
+  toggleAttraction: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
@@ -58,8 +66,11 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onClick: (id) => {
+    toggleAttraction: (id) => {
       dispatch(toggleAttraction(id));
+    },
+    calculate: (attractions) => {
+      dispatch(fetchTrips(attractions));
     }
   };
 };

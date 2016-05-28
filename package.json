@@ -37,6 +37,7 @@
     "classnames": "^2.2.5",
     "d3": "^3.5.17",
     "flexboxgrid": "^6.3.0",
+    "graphql-client": "^1.0.4",
     "immutable": "^3.8.1",
     "jquery": "^2.2.3",
     "jsdom": "^8.5.0",
