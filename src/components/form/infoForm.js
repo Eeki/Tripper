@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import { reduxForm } from 'redux-form'
+import FlatButton from 'material-ui/FlatButton'
 import DatePicker from 'material-ui/DatePicker'
 import TimePicker from 'material-ui/TimePicker'
 export const fields = [ 'arrivalDate', 'arrivalTime', 'departureDate', 'departureTime', 'numberOfTravelers' ];
@@ -52,7 +53,7 @@ class InfoForm extends Component {
             </button>
           </div>*/}
         </form>
-        <Link to="/attractionsForm">Next</Link>
+        <Link to="/attractionsForm"><FlatButton label="Next" primary={true}/></Link>
       </div>
     )
   }

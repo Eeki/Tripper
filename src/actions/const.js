@@ -3,3 +3,6 @@
  */
 
 export const SAVE_PLAN = 'SAVE_PLAN';
+
+export const TOGGLE_ATTRACTION = 'TOGGLE_ATTRACTION';
+
