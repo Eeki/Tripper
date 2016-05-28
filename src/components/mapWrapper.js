@@ -3,16 +3,14 @@
  */
 import React, { Component } from 'react';
 import Map from './map';
-import HotelSelector from './hotelSelector';
-import HotelDrawer from './hotelDrawer';
-class MapWrapper extends Component{
 
+
+class MapWrapper extends Component{
 
   render(){
     return (
       <div>
         <Map />
-        <HotelDrawer />
       </div>
     )
   }

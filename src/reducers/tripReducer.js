@@ -9,13 +9,14 @@ const initialState = [
           type: HOTEL,
           id: 2
         },
-        days: [
+      {
+        days: [ {
           itineraries: [
             {
               goal: {
                 type: ATTRACTION,
                 id: 21
-              }
+              },
               legs: [
                 {
                   startTime: 1464426014000,
