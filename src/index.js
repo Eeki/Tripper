@@ -15,4 +15,5 @@ ReactDOM.render(
   <Provider store={finalStore} >
     <Router history={browserHistory} routes={routes} />
   </Provider>
-  , document.querySelector('.app-container'));
+  , document.querySelector('#app-container')
+);

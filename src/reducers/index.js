@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux';
-import {reducer as formReducer} from 'redux-form'
+import { reducer as formReducer } from 'redux-form'
 
-import hotelData from './hotels';
+import { attractionsReducer } from './attractionsReducer'
+import hotels from '../../data/hotels';
 
 const rootReducer = combineReducers({
-  hotels: hotelData,
+  hotels: hotels,
+  attractions: attractionsReducer,
   form: formReducer
 });
 

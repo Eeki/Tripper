@@ -10,3 +10,17 @@
     background-color: #e9e7ff;
     height: 9vh;
 }
+
+.drop-zone-container{
+    display: table;
+    margin: 0 auto;
+}
+
+.fixed-bottom {
+    position:fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 3em;
+    width: 100%;
+    background-color: white;
+}
