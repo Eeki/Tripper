@@ -1,4 +1,4 @@
-export const initialAttractions = [
+export const attractions = [
     {
       "name": "Alexander Theatre",
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Alexander_Theater.JPG/640px-Alexander_Theater.JPG",

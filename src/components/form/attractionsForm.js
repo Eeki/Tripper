@@ -20,9 +20,9 @@ class AttractionsForm extends Component {
         <List>
           {attractions.map((attraction) =>
             <ListItem 
+              key={attraction.id}
               primaryText={attraction.name} 
-              rightToggle={<Checkbox checked={attraction.selected}/>} 
-              onClick={() => onClick(attraction.id)}
+              rightToggle={<Checkbox onClick={() => onClick(attraction.id)} checked={attraction.selected}/>} 
             />
           )}
         </List>
