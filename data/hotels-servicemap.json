@@ -1,0 +1,1582 @@
+{
+   "count": 109,
+   "next": "http://api.hel.fi/servicemap/v1/unit/?format=json&page=2&service=26002",
+   "previous": null,
+   "results": [
+      {
+         "id": 7808,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=karavaanikatu+4,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=karavaanikatu+4,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=karavaanikatu+4,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": null,
+               "phone": "09 310 78517",
+               "phone_mobile": null
+            },
+            {
+               "type": 165,
+               "name": {
+                  "fi": "Yleistä palautetta Liikuntavirastolle",
+                  "en": "General feedback to Sports Department",
+                  "sv": "Allmän respons till Idrottsverket"
+               },
+               "www_url": {
+                  "fi": "http://www.hel.fi/www/liv/fi/yhteystiedot-ja-palaute/",
+                  "en": "http://www.hel.fi/www/liv/fi/yhteystiedot-ja-palaute/",
+                  "sv": "http://www.hel.fi/www/liv/fi/yhteystiedot-ja-palaute/"
+               },
+               "section": "links",
+               "contact_person": null,
+               "email": null,
+               "phone": "09 310 78517",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "63"
+            }
+         ],
+         "data_source_url": "http://www.hel.fi",
+         "name": {
+            "fi": "Rastilan leirintäalue",
+            "en": "Rastila Camping",
+            "sv": "Rastila Camping"
+         },
+         "description": {
+          "fi": "",
+          "en": "",
+          "sv": ""
+         },
+         "provider_type": 101,
+         "street_address": {
+            "fi": "Karavaanikatu 4",
+            "en": "Karavaanikatu 4",
+            "sv": "Karavangatan 4"
+         },
+         "address_zip": "00980",
+         "phone": "09 310 78517",
+         "email": null,
+         "www_url": {
+            "fi": "http://www.hel.fi/www/Helsinki/fi/kulttuuri-ja-vapaa-aika/muu-vapaa-aika/rastila/",
+            "en": "http://www.hel.fi/www/Helsinki/fi/kulttuuri-ja-vapaa-aika/muu-vapaa-aika/rastila/",
+            "sv": "http://www.hel.fi/www/Helsinki/fi/kulttuuri-ja-vapaa-aika/muu-vapaa-aika/rastila/"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2016-01-20T08:01:15.165843Z",
+         "root_services": [
+            50002
+         ],
+         "department": "LIV",
+         "organization": 91,
+         "municipality": "helsinki",
+         "services": [
+            25994,
+            26002,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               25.12041,
+               60.20818
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20436,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=messuaukio+1,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=messuaukio+1,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=messuaukio+1,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "helsinki.holidayinn@restel.fi",
+               "phone": "09 150 900",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "32"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Holiday Inn Helsinki Messukeskus",
+            "en": "Holiday Inn Helsinki Messukeskus",
+            "sv": "Holiday Inn Helsinki"
+         },
+         "description": {
+            "fi": "Helsingin Messukeskuksen yhteydessä sijaitseva Holiday Inn Helsinki Messukeskus -hotelli on messu- ja kokousmaailman keskipiste, josta on joustavat yhteydet Helsinki-Vantaan lentoasemalle, rautatieasemalle ja Helsingin keskustaan. Kaikissa huoneissa on ilmastointi, maksuton laajakaistayhteys, vedenkeitin kahvin ja teen valmistukseen sekä silitysvarustus.",
+            "en": "Located right next door to Messukeskus Helsinki, the Holiday Inn Helsinki Messukeskus provides the guest with a truly unique, functional range of services. Convenient connections to Helsinki-Vantaa Airport, Helsinki Railway Station and downtown Helsinki puts the Holiday Inn hotel at the centre of the Finnish conference scene. Messukeskus Helsinki in connection with the hotel offers guests a wide range of exhibition and conference facilities. With its great location for business and leisure travel, this high-standard hotel offers 244 spacious rooms. Amenities include ADSL and wireless broadband connection, coffee & tea making facilities, in-room safe and an ironing center. The hotel offers free access to Minigym and Finnish sauna.",
+            "sv": "Holiday Inn Helsinki ligger bredvid Helsingifors Mässcentrum och dess mångsidiga konferens- och restaurangtjänster erbjuder gästerna smidiga servicepaket. I hotellet finns motionshall av hög klass som står till gästernas fria förfogande. Dessutom finns det två bastur i andra våningen och en bastu i tionde våningen med trivsamt sällskaps-/sammanträdesrum och egen altan."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Messuaukio 1",
+            "en": "Messuaukio 1",
+            "sv": "Mässplatsen 1"
+         },
+         "address_zip": "00520",
+         "phone": "09 150 900",
+         "email": "helsinki.holidayinn@restel.fi",
+         "www_url": {
+            "fi": "http://www.finland.holidayinn.com/hotellit/holiday-inn-helsinki-messukeskus",
+            "en": "http://www.finland.holidayinn.com/hotellit/helsinki/en_GB/helsinki/",
+            "sv": "http://www.holiday-inn.com/hihelsinki"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-11-26T00:01:49.824454Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.936764,
+               60.201992
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20442,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=vuorikatu+18,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=vuorikatu+18,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=vuorikatu+18,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "stay@cityapartments.fi",
+               "phone": "09 612 6990",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "352"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "City Apartments",
+            "en": "City Apartments",
+            "sv": "City Apartments"
+         },
+         "description": {
+            "fi": "Viihtyisää tilapäismajoitusta Helsingin ydinkeskustassa. City Apartments yhdistää oman asunnon ja hotellielämän parhaat puolet. Kaikki samassa osoitteessa sijaitsevat huoneistot ovat täysin kalustettuja ja varustettuja (uusittu 2011).\nKeittiö varusteineen; astiasto, mikro, liesi, kahvinkeitin, vedenkeitin, leivänpaahdin, jääkaappi, astianpesukone. Pyykinpesukone, suora puhelinlinja, silitysrauta/lauta, hiustenkuivaaja, tilava työpiste, puhelinherätys. Kylpyhuone suihkulla, maksuttomat hygieniatuotteet, lämmitetty pyyheteline.\nLaajakaistayhteys (rajoittamaton käyttöaika ja datamäärä).\nTV satelliittikanavineen.\nPysäköintitilat.\nHuoneistohinnat sisältävät: liinavaatteet ja pyyhkeet, siivouksen viikoittain, elokuvakanavan ja laajakaistayhteyden.",
+            "en": "Furnished temporary housing in the Helsinki city centre. City Apartments offers a combination of all that is best about hotels and a home of your own. All apartments located in the same address in downtown Helsinki are fully furnished and equipped (renovated 2011).\nKitchen; table ware, microwave oven, stove, coffee maker, kettle, toaster, refrigerator, dishwasher.\nWashing machine, direct dial phone, spacious work area, iron/ironing board, hair dryer, wake up alarm, towel heater.\nBathroom with complimentary toiletries. Broadband Internet Access (no time restrictions or limits on amount of data transferred).\nTV with international satellite channels. Indoor parking. Apartment rates includes: bed linen and towels, weekly maid service, movie channel and broadband internet access.",
+            "sv": "Bekvämt tillfälligt boende i centrum av Helsingfors. City Apartments erbjuder egna hems och hotell livets bästa delarna. I priset ingår: sängkläder och handdukar, städning en gång i veckan, filmkanal och bredbandsförbindelse. Gratis internetförbindelse (ej i lokalerna). Parkeringplats (tilläggskostnad). I alla fullt inredda lokaler finns direkttelefon, tvättmaskin, väckning, hårtork, ångstrykjärn, dörrtelefon, stort skrivbord samt TV med sat.kanaler. Köksutrustning; kärl, micro, spis, ugn, kaffekokare, brödrost, kylskåp med frys. I Torni och Business Sviterna dessutom diskmaskin, CD-spelare och bredbandstelevision."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Vuorikatu 18",
+            "en": "Vuorikatu 18",
+            "sv": "Berggatan 18"
+         },
+         "address_zip": "00100",
+         "phone": "09 612 6990",
+         "email": "stay@cityapartments.fi",
+         "www_url": {
+            "fi": "http://www.cityapartments.fi",
+            "en": "http://www.cityapartments.fi",
+            "sv": "http://www.cityapartments.fi"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:32:03.452938Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.94682,
+               60.172287
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20450,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=yrj%C3%B6nkatu+26,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=yrj%C3%B6nkatu+26,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=yrj%C3%B6nkatu+26,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "torni.helsinki@sokoshotels.fi",
+               "phone": "020 123 4604",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "61"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Solo Sokos Hotel Torni",
+            "en": "Solo Sokos Hotel Torni",
+            "sv": "Solo Sokos Hotel Torni"
+         },
+         "description": {
+            "fi": "Torni on elävä klassikko Helsingin sydämessä. Solona se on paljon muutakin kuin rakennus ja osoite: sillä on ainutlaatuinen luonne ja persoona. Tornin henki tarkoittaa yksilöllistä palvelua, kokonaisvaltaista taide-elämystä ja tuhansia tarinoita. Jokainen huone on oma maailmansa, niissä on pieniä yksityiskohtia, kuten kaakeliuuneja, taideteoksia ja tassuammeita. Ylimmissä kerroksissa pisteenä iin päälle tulee upeat näköalat. Ravintola Tornissa yhdistyvät herkulliset maut ja visuaalisuus. Ateljee Bar, American Bar ja irlantilaishenkinen O'Malleys ovat kaikki omaa tunnelmaansa huokuvia kaupunkilaisten kohtaamispaikkoja.",
+            "en": "Torni is a lively classic in the heart of Helsinki. As a Solo hotel, it is much more than a building and an address: it has unique character and personality. Torni's spirit is built on individual service, a comprehensive art experience and thousands of stories. Every room is a world of its own, with small details such as tile stoves, works of art and on bathtubs on claw foot pedestals. On the highest floors, impressive city views add a final touch. At the Torni Restaurant, delicious tastes meet striking visuality. The Ateljee Bar, American Bar and Irish-inspired O'Malleys are local meeting places, each with a special atmosphere of its own.",
+            "sv": "Torni är en levande klassiker i hjärtat av Helsingfors. Som Solo är hotellet mycket mer än bara en byggnad och en adress: det har en unik karaktär och person. Tornis anda innebär individuell service, en heltäckande konstupplevelse och tusentals historier. Varje rum är en värld för sig, med små detaljer såsom kakelugnar, konstverk och badkar med lejonfötter. Som pricken på i:et finns en fantastisk högst upp. Restaurang Torni kombinerar läckra smaker med visualitet. Stadsbornas träffpunkter Ateljee Bar, American Bar och irländska puben O'Malleys har alla en egen stämning."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Yrjönkatu 26",
+            "en": "Yrjönkatu 26",
+            "sv": "Georgsgatan 26"
+         },
+         "address_zip": "00100",
+         "phone": "020 123 4604",
+         "email": "torni.helsinki@sokoshotels.fi",
+         "www_url": {
+            "fi": "https://www.sokoshotels.fi/fi/helsinki/solo-sokos-hotel-torni",
+            "en": "https://www.sokoshotels.fi/en/helsinki/sokos-hotel-torni",
+            "sv": "https://www.sokoshotels.fi/sv/helsingfors/sokos-hotel-torni"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-08-15T23:02:13.241753Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            25996,
+            26002,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.938631,
+               60.16777
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20475,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=john+stenbergin+ranta+4,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=john+stenbergin+ranta+4,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=john+stenbergin+ranta+4,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "helsinkistrand@hilton.com",
+               "phone": "09 393 51",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "51"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Hilton Helsinki Strand",
+            "en": "Hilton Helsinki Strand",
+            "sv": "Hilton Helsinki Strand"
+         },
+         "description": {
+            "fi": "Hilton Helsinki Strand on tyylikäs ja viihtyisä keskustahotelli, joka on kävelymatkan päässä Helsingin ydinkeskustasta ja sen historiallisista nähtävyyksistä. Sijaintinsa ansiosta hotelli soveltuu erinomaisesti sekä liike- että vapaa-ajanmatkustajille. Hyvin varusteltujen hotellihuoneiden lisäksi hotelli tarjoaa valoisat ja monipuoliset tilat niin pieniin kuin suuriin tilaisuuksiin.",
+            "en": "Hilton Helsinki Strand, a stylish and comfortable downtown hotel, is located by the sea, within walking distance of the city centre and the historic sights of Helsinki. The location is ideal for both business and\nholiday travellers. In addition to the bright, spacious rooms, the hotel offers versatile meeting and conference spaces for small negotiations and big dinners alike.",
+            "sv": "Hilton Helsinki Strand ligger vid havet. Hotellet är som ett individuellt konstverk, skapat av de bästa byggmaterialen: marmor och finländsk granit. Det konstnärliga intrycket förstärks av glas som finns i hotellets allmänna lokaliteter och de grafiska kontverk som finns i de ljusa, rymlika hotellrummen. Hotellets läge är unikt: vid vattnet, men på kort promenadavstånd från innerstaden."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "John Stenbergin ranta 4",
+            "en": "John Stenbergin ranta 4",
+            "sv": "John Stenbergs strand 4"
+         },
+         "address_zip": "00530",
+         "phone": "09 393 51",
+         "email": "helsinkistrand@hilton.com",
+         "www_url": {
+            "fi": "http://www.helsinki-strand.hilton.com",
+            "en": "http://www.helsinki-strand.hilton.com",
+            "sv": "http://www.hilton.com"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:55.488352Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26004,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.951351,
+               60.177315
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20492,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=kasarmikatu+40,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=kasarmikatu+40,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=kasarmikatu+40,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "rivoli.jardin@rivoli.fi",
+               "phone": "09 681 500",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "56"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Next Hotel Rivoli Jardin",
+            "en": "Next Hotel Rivoli Jardin",
+            "sv": "Next Hotel Rivoli Jardin"
+         },
+         "description": {
+            "fi": "Next Hotel Rivoli Jardin sijaitsee aivan Helsingin ydinkeskustassa.\nHuoneet ovat yksilöllisesti sisutettuja ja kaikissa 55 huoneessa on WiFi sekä huonekohtainen ilmastointi. Design District Helsinki, nähtävyydet ja kaupungin parhaat ravintolat ovat kävelymatkan etäisyydellä.",
+            "en": "Rivoli Jardin is located at the very heart of Helsinki, just a stone's throw from the Esplanade Park, and the most beautiful shopping and walking streets. Design District Helsinki, as well as the best restaurants, are within walking distance. The hotel has wireless Internet access and all rooms are individually air-conditioned.",
+            "sv": "Rivoli Jardin är beläget mitt i stadens affärscentrum. 55st. individuellt inredda rum med WiFi och luftkonditionering. Design District Helsinki, sevärdheter och stans bästa restauranger finns inom promenadavstånd."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Kasarmikatu 40",
+            "en": "Kasarmikatu 40",
+            "sv": "Kaserngatan 40"
+         },
+         "address_zip": "00130",
+         "phone": "09 681 500",
+         "email": "rivoli.jardin@rivoli.fi",
+         "www_url": {
+            "fi": "http://www.nexthotels.fi/hotellimme/jardin",
+            "en": "http://www.nexthotels.fi/hotellimme/jardin",
+            "sv": "http://www.nexthotels.fi/hotellimme/jardin"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:32:15.081927Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.947351,
+               60.165653
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20498,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=kauppiaankatu+5,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=kauppiaankatu+5,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=kauppiaankatu+5,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "reservations@hellstenhotels.fi",
+               "phone": "09 251 1050",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "665"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Hellsten Helsinki Senate - Penthouse",
+            "en": "Hellsten Helsinki Senate - Penthouse",
+            "sv": "Hellsten Helsinki Senate - Penthouse"
+         },
+         "description": {
+            "fi": "Hellsten Hotel Apartments huoneistohotellit tarjoavat tilavia, kalustettuja hotellihuoneistoja lyhyeen sekä pitkään majoitustarpeeseen. Kaikissa huoneistoissa on oma keittiö ja osassa huoneistoista myös oma sauna ja parveke. Katajanokalla sijaitsevassa Hellsten Helsinki Senatessa on yhteensä 52 huoneistoa, joista yksi 160m2 upea kattohuoneisto. Se soveltuu kokouksiin, juhliin, hääsviitiksi tai ylelliseen yöpymiseen. Hyvin varustellussa huoneistossa on mm. iso kattoterassi, sauna sekä poreallas. Tilaan saa tuoda omat tarjoilut.",
+            "en": "Hellsten Hotel Apartments offers spacious, furnished apartments for short or long term rent. All apartments are equipped with kitchenettes and some apartments even have sauna and balcony. Hellsten Helsinki Senate is located in Katajanokka, one of the city¿s most prestigious areas. There are 52 hotel apartments for 1-4 persons and room sizes vary from 20 to 160 square metres.",
+            "sv": "På Hellsten Hotel Apartments mitt i Helsingfors bor man verkligen centralt. Precis utanför entrén väntar storstadens närhet till affärer, restauranger och kulturutbud."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Kauppiaankatu 5",
+            "en": "Kauppiaankatu 5",
+            "sv": "Köpmansgatan 5"
+         },
+         "address_zip": "00160",
+         "phone": "09 251 1050",
+         "email": "reservations@hellstenhotels.fi",
+         "www_url": {
+            "fi": "http://www.hellstenhotels.fi/fi/",
+            "en": "http://www.hellstenhotels.fi",
+            "sv": "http://www.hellstenhotels.fi"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:19.081339Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26004,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.965199,
+               60.16736
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20506,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=j%C3%A4lsitie+5,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=j%C3%A4lsitie+5,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=j%C3%A4lsitie+5,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "asiakaspalvelu@ael.fi",
+               "phone": "09 530 7555",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "1098"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "AEL-Hotelli",
+            "en": "AEL Hotel",
+            "sv": "AEL Hotell"
+         },
+         "description": {
+            "fi": "AEL-Hotellissa majoitut rauhallisessa ympäristössä. AEL-Hotelli sijaitsee AEL:n koulutustilojen välittömässä läheisyydessä Malminkartanossa, noin 10 kilometrin päässä Helsingin keskustasta.",
+            "en": "Accomodation in a quiet environment, AEL-Hotel is situated close to the AEL Center for Technical Training in Malminkartano, approx. 10 km from the Helsinki city centre.",
+            "sv": "Inkvartering i lugn miljö. AEL Hotellet är beläget nära AEL:s kurscenter i Malmgård, ca. 10 km från Helsingfors centrum."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Jälsitie 5",
+            "en": "Jälsitie 5",
+            "sv": "Savvägen 5"
+         },
+         "address_zip": "00410",
+         "phone": "09 530 7555",
+         "email": "asiakaspalvelu@ael.fi",
+         "www_url": {
+            "fi": "http://www.ael.fi/kokouspalvelut_ja_hotelli/hotelli",
+            "en": "http://www.ael.fi/kokouspalvelut_ja_hotelli/hotelli?lang=en",
+            "sv": "http://www.ael.fi/kokouspalvelut_ja_hotelli/hotelli?lang=en"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:46.125736Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.854622,
+               60.249245
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20513,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=kluuvikatu+8,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=kluuvikatu+8,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=kluuvikatu+8,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "hotelhelsinki.helsinki@sokoshotels.fi",
+               "phone": "020 123 4601",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "59"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Original Sokos Hotel Helsinki",
+            "en": "Original Sokos Hotel Helsinki",
+            "sv": "Original Sokos Hotel Helsinki"
+         },
+         "description": {
+            "fi": "Mutkaton ja viihtyisä, asiakkaiden kestosuosikki Original Sokos Hotel Helsinki sijaitsee Ateneumin ja Senaatintorin välissä keskellä pääkaupungin sykettä ja vilkasta ostosaluetta. Hotellin kaikki huoneet on sisustettu nuorekkaaseen, skandinaaviseen henkeen. Kodikkaat ravintolat, Fransmanni ja Memphis, tarjoavat monipuolista ruokaa rennossa ilmapiirissä. Uusinta uutta on vasta avattu Easy Fit Helsinki Club-liikuntakeskus, joka on asiakkaittemme käytössä edullisella kertamaksulla. Ylimmästä kerroksesta, Helsingin kattojen yläpuolelta, löytyy viihtyisät saunatilat niin bisnesmatkustajien kuin lomalaistenkin käyttöön. Tämän keskemmälle et Helsingissä pääse. Tervetuloa.",
+            "en": "Honest, easy-going and a favourite with staying power, Original Sokos Hotel Helsinki is located on the pulse of the city, between Ateneum Art Museum and Senate Square in the centre of the capital with its busy shopping area. All hotel rooms have a youthful Scandinavian theme. Its cosy Fransmanni and Memphis restaurants serve a versatile menu in a relaxed atmosphere. Customers can use the newly opened EasyFit gym, for a low-price charge. On the highest storey, above the rooftops of Helsinki, you'll find cosy sauna facilities for the enjoyment of business travellers and holidaymakers alike. You can't get any closer to the heart of Helsinki than this. Welcome!",
+            "sv": "Kundernas ständiga favorit, okomplicerade och trivsamma Original Sokos Hotel Helsinki befinner sig mellan Ateneum och Senatstorget, mitt i huvudstadens puls vid dess livliga shoppingområde. Alla hotellrum är inredda med ungdomligt, skandinaviskt tema. Hotellets trivsamma restauranger Fransmanni och Memphis erbjuder mångsidig mat i en avkopplad miljö. Nyaste nytt är nyligen öppnade EasyFit-gymmet, som våra kunder kan använda mot en förmånlig engångsavgift. På översta våningen, ovan taken i Helsingfors, finns trivsamma bastulokaler för affärs- och fritidsgäster. Närmare Helsingfors centrum kommer du inte. Välkommen!"
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Kluuvikatu 8",
+            "en": "Kluuvikatu 8",
+            "sv": "Glogatan 8"
+         },
+         "address_zip": "00100",
+         "phone": "020 123 4601",
+         "email": "hotelhelsinki.helsinki@sokoshotels.fi",
+         "www_url": {
+            "fi": "https://www.sokoshotels.fi/fi/helsinki/sokos-hotel-helsinki/",
+            "en": "https://www.sokoshotels.fi/en/helsinki/sokos-hotel-helsinki",
+            "sv": "https://www.sokoshotels.fi/sv/helsingfors/sokos-hotel-helsinki"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-08-15T23:02:04.923149Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.94677,
+               60.169586
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20525,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=maistraatinportti+3,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=maistraatinportti+3,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=maistraatinportti+3,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "pasila.helsinki@sokoshotels.fi",
+               "phone": "020 123 4613",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "50"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Original Sokos Hotel Pasila",
+            "en": "Original Sokos Hotel Pasila",
+            "sv": "Original Sokos Hotel Pasila"
+         },
+         "description": {
+            "fi": "Lämminhenkinen Original Sokos Hotel Pasila sijaitsee tapahtumien sykkeessä; Messukeskuksen, Hartwall Areenan, Linnanmäen ja Keskuspuiston läheisyydessä. Helppous ja sijainti hyvine liikenneyhteyksineen niin junalla, raitiovaunulla kuin bussilla, onkin syy, miksi messu-, kokous- ja urheilijavieraat ovat valinneet Pasilan ykkösvaihtoehdokseen. Hotellin monipuolinen tarjonta sisältää majoituspalvelujen lisäksi kattavat kokous- ja ravintolapalvelut sekä viihtyisät saunat. Tervetuloa mutkattomaan Pasilaan.",
+            "en": "The hospitable Original Sokos Hotel Pasila is situated right next to the action, close to he vicinity of Helsinki Exhibition and Convention Centre, Hartwall Arena, Linnanmäki Amusement Park and Helsinki's Central Park. Easily accessible, the hotel has good train, tram and bus connections, which makes it a favourite of exhibition, conference and sports event visitors. The hotel's versatile range of facilities includes accommodation, meeting and restaurant services and comfortable saunas. Welcome to easy-going Pasila!",
+            "sv": "Varmhjärtade Original Sokos Hotel Pasila befinner sig där det händer, i närheten av Mässcentrum, Hartwall Arena, Borgbacken och Helsingfors centralpark. Dess tillgänglighet och goda tåg-, spårvagns- och bussförbindelser är orsaken till att många mäss-, konferens- och idrottsgäster föredrar Pasila. Hotellets mångsidiga utbud inkluderar logi, heltäckande konferens- och restaurangtjänster samt trivsamma bastur. Välkommen till okomplicerade Pasila!"
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Maistraatinportti 3",
+            "en": "Maistraatinportti 3",
+            "sv": "Magistratsporten 3"
+         },
+         "address_zip": "00240",
+         "phone": "020 123 4613",
+         "email": "pasila.helsinki@sokoshotels.fi",
+         "www_url": {
+            "fi": "https://www.sokoshotels.fi/fi/helsinki/sokos-hotel-pasila",
+            "en": "https://www.sokoshotels.fi/en/helsinki/sokos-hotel-pasila",
+            "sv": "https://www.sokoshotels.fi/sv/helsingfors/sokos-hotel-pasila"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-08-15T23:02:16.316700Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26004,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.925825,
+               60.19906
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20641,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=albertinkatu+34,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=albertinkatu+34,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=albertinkatu+34,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "aleksanteri.helsinki@sokoshotels.fi",
+               "phone": "020 123 4643",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "1181"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Radisson Blu Aleksanteri Hotel",
+            "en": "Radisson Blu Aleksanteri Hotel",
+            "sv": "Radisson Blu Aleksanteri Hotel"
+         },
+         "description": {
+            "fi": "Vanha rakennus kätkee sisäänsä yksilöllisiä ja laadukkaita hotellihuoneita sekä monia mieleenpainuvia yksityiskohtia. Hotellissa on mm. Remu Aaltosen suunnittelema Rock'n'Rose-huone, burleskitaidetta ja pohjoismaista designea. Aleksanteri onkin laadukas kokoelma upeita tyylejä. .",
+            "en": "The old building offers individual, high-quality rooms and many memorable details. For instance, the hotel boasts a Rock 'n Rose room, designed by Finnish rock music icon Remu Aaltonen, as well as burlesque art and Scandinavian design. Aleksanteri shows a classy collection of great styles. Individual, pleasantly surprising and always in tune with the times, the hotel's individual service has earned praise.",
+            "sv": "Den gamla byggnaden rymmer individuella och högklassiga hotellrum samt många minnesvärda detaljer. Hotellet har bland annat ett Rock'n'Rose-rum som designats av Remu Aaltonen, burleskkonst och nordisk design. Aleksanteri är en högklassig blandning av fina stilar. Hotellets omtyckta service är individuell och överraskande samt alltid à jour med händelserna."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Albertinkatu 34",
+            "en": "Albertinkatu 34",
+            "sv": "Albertsgatan 34"
+         },
+         "address_zip": "00180",
+         "phone": "020 123 4643",
+         "email": "info.aleksanteri.helsinki@radissonblu.com",
+         "www_url": {
+            "fi": "https://www.radissonblu.com/en/aleksanteri-hotel-helsinki",
+            "en": "https://www.radissonblu.com/en/aleksanteri-hotel-helsinki",
+            "sv": "https://www.radissonblu.com/en/aleksanteri-hotel-helsinki"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2016-05-04T23:01:43.113101Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.933126,
+               60.164043
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20647,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=kalastajatorpantie+1,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=kalastajatorpantie+1,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=kalastajatorpantie+1,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "helsinkikalastajatorppa@hilton.com",
+               "phone": "09 458 11",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "46"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Hilton Helsinki Kalastajatorppa",
+            "en": "Hilton Helsinki Kalastajatorppa",
+            "sv": "Hilton Helsinki Fiskartorpet"
+         },
+         "description": {
+            "fi": "Hilton Helsinki Kalastajatorpalla on pitkä ja vaiherikas historia. Useat kansainväliset konferenssit ja tapahtumat on vuosien mittaan järjestetty juuri täällä. Hotellin ainutlaatuiset puitteet ja palvelut, tasokkaat ravintolat ja monipuoliset kokoustilat luovat upean kokonaisuuden niin pienimuotoisiin tilaisuuksiin kuin suuriin kongresseihin ja juhlaillallisiin.",
+            "en": "Hilton Helsinki Kalastajatorppa has a long and diverse history. Many international conferences and events have been held here during the years. The unique surroundings, tasteful decoration, high-class restaurants and diverse meeting and banquet rooms together create exciting atmosphere for hotel stays and events of all kinds.",
+            "sv": "Ett internationellt kongresshotell som ligger naturskönt vid havet. Hotellet erbjuder lokaliteter för konferenser och utställningar (bl.a. bilutställningar). Många lokaler som enkelt kan arrangeras för olika ändamål. Fiskartorpet är också känt som bankett- och cocktaillokal. Den legendariska Runda Salen med sina balkonger är trditionell som värdig festrestaurang och parken lämpar sig utmärkt för trädgårdsfester och andra evenemang året om."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Kalastajatorpantie 1",
+            "en": "Kalastajatorpantie 1",
+            "sv": "Fiskartorpsvägen 1"
+         },
+         "address_zip": "00330",
+         "phone": "09 458 11",
+         "email": "helsinkikalastajatorppa@hilton.com",
+         "www_url": {
+            "fi": "http://www.kalastajatorppa.hilton.com",
+            "en": "http://www.kalastajatorppa.hilton.com",
+            "sv": "http://www.hilton.co.uk/kalastajatorppa"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:40.930952Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26004,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.873566,
+               60.19224
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20652,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=uudenmaankatu+26,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=uudenmaankatu+26,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=uudenmaankatu+26,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "vuokraus@kotihotelli.fi",
+               "phone": "09 176 505",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "695"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Kotihotelli Oy",
+            "en": "Kotihotelli Oy",
+            "sv": "Kotihotelli Oy"
+         },
+         "description": {
+            "fi": "Kotihotelli tarjoaa kodinomaisen ympäristön väliaikaista asumista varten. Asunnot sijaitsevat Helsingin keskustan ja kantakaupungin alueella. Tarjolla on myös muutamia asuntoja muualta pääkaupunkiseudulta.",
+            "en": "Kotihotelli can offer homelike accommodation for longer or shorter periods of stay. The flats are situated in the city of Helsinki, some in the heart of the city, others further from the city centre."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Uudenmaankatu 26",
+            "en": "Uudenmaankatu 26",
+            "sv": "Nylandsgatan 26"
+         },
+         "address_zip": "00120",
+         "phone": "09 176 505",
+         "email": "vuokraus@kotihotelli.fi",
+         "www_url": {
+            "fi": "http://www.kotihotelli.fi",
+            "en": "http://www.kotihotelli.fi/english.php",
+            "sv": "http://www.kotihotelli.fi"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:32:01.003070Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.93925,
+               60.163544
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20661,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=unioninkatu+17,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=unioninkatu+17,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=unioninkatu+17,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "info@hotelhaven.fi",
+               "phone": "09 681 930",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "1344"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Hotel Haven",
+            "en": "Hotel Haven",
+            "sv": "Hotel Haven"
+         },
+         "description": {
+            "fi": "Hotel Haven, Suomen ensimmäinen Small Luxury Hotels of the World -ketjun jäsen, tarjoaa lämminhenkistä kodikkuutta, eksklusiivista viihtyvyyttä ja korkealuokkaisia palveluja vaativimpienkin vieraiden makuun. Hotel Haven on avattu helmikuussa 2009. Saman kiinteistön ravintolapalvelut G.W.Sundmansissa, Sundmans Krogissa sekä Haviksessa palvelevat niin yksityis- kuin bisnesmatkailijoita. Lisäksi kokouspalvelut, kolme kokoustilaa sekä auditorio, mahdollistavat 120 henkilön kokousten järjestämisen hotellin yhteydessä. Upean lisän monipuoliseen tarjontaan tuo hotellin yhteyteen avattava 9 hoitohuoneen Day Spa, jossa tarjotaan hoitoja niin naisille kuin miehillekin.",
+            "en": "Hotel Haven, Finland's first member of the Small Luxury Hotels of the World chain, is designed to provide homely warmth, exclusive comfort and high-quality service for the discerning guest. First class service is supported by high-quality restaurants; G.W.Sundmans, Sundmans Krog and Havis serve both business and leisure guests. Additionally, conference services, altogether four meeting rooms and an auditorium, makes it possible to organize meetings for up to 120 persons within the hotel. In an elegant, yet cosy lobby, guests can relax by a fireplace and browse through daily papers. Bar Haven serves both hot beverages and relaxing drinks."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Unioninkatu 17",
+            "en": "Unioninkatu 17",
+            "sv": "Unionsgatan 17"
+         },
+         "address_zip": "00130",
+         "phone": "09 681 930",
+         "email": "info@hotelhaven.fi",
+         "www_url": {
+            "fi": "http://www.hotelhaven.fi",
+            "en": "http://www.hotelhaven.fi",
+            "sv": "http://www.hotelhaven.fi"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:45.515917Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.95169,
+               60.1666
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20704,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=ramsinniementie+16,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=ramsinniementie+16,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=ramsinniementie+16,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "sales@rantapuisto.fi",
+               "phone": "09 319 11",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "26"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Best Western Hotel Rantapuisto",
+            "en": "Best Western Hotel Rantapuisto",
+            "sv": "Best Western Hotel Rantapuisto"
+         },
+         "description": {
+            "fi": "Best Western Hotel Rantapuiston näyttävä päärakennus valmistui 1960-luvulla pankin koulutuskeskukseksi keskelle itähelsinkiläistä luontoa. Paljon on tapahtunut sen jälkeen, mutta talo viestii edelleen aikakautensa mielenkiintoisia arkkitehtonisia piirteitä: kokonaisuus muodostuu useista siivistä, tilat ovat suuria ja käytävät avaria. Jäljellä on myös useita sisustuksen helmiä kuten valaisimia, takkoja ja kattorakenteita. Rantapuiston vetovoimaa vahvistaa sen sijainti luonnonkauniissa ympäristössä. Valtavista ikkunoista avautuu esteetön näkymä lähiluontoon ja merelle.",
+            "en": "In Best Western Hotel Rantapuisto you can find high quality conference, hotel and restaurant facilities in architectonically significant buildings surrounded by beautiful nature. Rantapuisto offers for example: distinguished auditorium for 300 people, 15 meeting rooms and abundance of facilities for group work, 70 spacious and fresh hotel rooms, three restaurants, all rich in atmosphere, pleasant sauna facilities and a seashore sauna with its own lounge with a fireplace, exhibition hall of 600m2.",
+            "sv": "Best Western Hotel Rantapuisto erbjuder sina gäster bekväma hotellrum samt utmärkt miljö för konferenser och olika evenemang nära naturen och Helsingfors centrum.\nRantapuisto är beläget i stadsdelen Nordsjö, vid Ramsjöudden i Helsingfors - bara 20 minuters körning från centrum och flygplatsen. Det är 1,5 km till närmaste metrostationen, Rastböle varifrån anknytningsförbindelse med buss mot Ramsjöudden ungefär var tionde minut. Stor gratis parkeringsplats för gäster. Hotellet har 70 ljusa och bekväma rum. Alla dubbelrum har havsutsikt. Hotellrummen är utrustade med dusch och toalett, hårtork, internet och betal-tv."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Ramsinniementie 16",
+            "en": "Ramsinniementie 16",
+            "sv": "Ramsöuddsvägen 16"
+         },
+         "address_zip": "00980",
+         "phone": "09 319 11",
+         "email": "sales@rantapuisto.fi",
+         "www_url": {
+            "fi": "http://www.rantapuisto.fi",
+            "en": "http://www.rantapuisto.fi/rantapuisto/?lang=englanti",
+            "sv": "http://www.rantapuisto.fi"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:58.462312Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26004,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               25.112253,
+               60.195774
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20726,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=katajanokanlaituri+7,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=katajanokanlaituri+7,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=katajanokanlaituri+7,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "grandmarina@scandichotels.com",
+               "phone": "09 166 61",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "45"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Scandic Grand Marina",
+            "en": "Scandic Grand Marina",
+            "sv": "Scandic Hotel Grand Marina"
+         },
+         "description": {
+            "fi": "Scandic Grand Marina sijaitsee Katajanokalla, Helsingin ydinkeskustan välittömässä läheisyydessä. Alunperin satamamakasiiniksi rakennettu hotelli viehättää miljööllään. Kaikissa huoneissa on satelliitti- ja elokuvakanavilla varustettu tv, minibaari, puhelin, silitysrauta ja -lauta, sekä tallelokero. Hotellissa toimii langaton verkkoyhteys ja sen käyttö on maksutonta.",
+            "en": "Scandic Grand Marina presents unique architecture by the sea and charms with its milieu and scenery. Scandic Grand Marina and Marina Congress Center are located nearby the Market square and all the facilities of the Helsinki city centre are only a short walk away. Scandic Grand Marina and Marina Congress Center offer splendid settings for successful meetings, congresses and events which can be arranged for even up to 2500 persons. In our saunas you can refresh before a long day or relax after having one.",
+            "sv": "Ett hotell med mångsidiga tjänster. Unik arkitektur vid havet. Scandic Hotel Grand Marina byggdes ursprungligen som ett hamnmagasin i början av 1900-talet, och miljön upplevs därför som speciellt fängslande. Helsingfors centrum med sina Salutorg och andra sevärdheter ligger inte långt ifrån och tack vare havet känns inte heller naturen särskilt avlägsen."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Katajanokanlaituri 7",
+            "en": "Katajanokanlaituri 7",
+            "sv": "Skatuddskajen 6"
+         },
+         "address_zip": "00160",
+         "phone": "09 166 61",
+         "email": "grandmarina@scandichotels.com",
+         "www_url": {
+            "fi": "http://www.scandichotels.fi/grandmarina",
+            "en": "http://www.scandichotels.com/",
+            "sv": "http://www.scandichotels.com"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-12-05T00:01:05.140469Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.964354,
+               60.16592
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20727,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=l%C3%B6nnrotinkatu+29,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=l%C3%B6nnrotinkatu+29,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=l%C3%B6nnrotinkatu+29,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "salesart@glohotels.fi",
+               "phone": "010 344 4100",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "36"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "GLO Hotel Art",
+            "en": "GLO Hotel Art (Hotel Linna)",
+            "sv": "GLO Hotel Art (f.d. Hotel Linna)"
+         },
+         "description": {
+            "fi": "GLO Hotel Art, yhdistää ainutlaatuisella tavalla vuonna 1903 rakennetun Art Nouveau -linnan kokous- ja juhlatilat sekä modernin uuden hotellin.\nGLO Hotel Artin huoneiden tyylikäs ja moderni sisustus on tehty yhteistyössä suomalaisten suunnittelijoiden kanssa. Asiakkaiden yksilöllisiin tarpeisiin on kiinnitetty erityistä huomiota mm. liike- ja perhematkustajien palveluvalikoissa.",
+            "en": "The new GLO Hotel Art is a unique combination of a 1903-built Art Nouveau castle, with its variety of charming meeting and event facilities, and a new modern hotel. The stylish and modern 170 rooms of the hotel have been created together with Finnish designers. The individual needs of the customers have been taken into account when designing the range of services available for business visitors and families."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Lönnrotinkatu 29",
+            "en": "Lönnrotinkatu 29",
+            "sv": "Lönnrotsgatan 29"
+         },
+         "address_zip": "00180",
+         "phone": "010 344 4100",
+         "email": "salesart@glohotels.fi",
+         "www_url": {
+            "fi": "http://glohotels.fi/hotellit/glo-hotel-art",
+            "en": "http://glohotels.fi/en/hotels/glo-hotel-art",
+            "sv": "http://hotelglo.fi/en/glo-art"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2016-05-04T23:01:41.445491Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002,
+            26004,
+            26006
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.931793,
+               60.164345
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20732,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=malmin+asematie+6,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=malmin+asematie+6,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=malmin+asematie+6,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "hotelavion@kolumbus.fi",
+               "phone": "09 350 7440",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "120"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Hotelli Avion",
+            "en": "Hotel Avion",
+            "sv": "Hotel Avion"
+         },
+         "description": {
+            "fi": "Hotelli Avion on viihtyisä hotelli-ravintola Helsingin Malmilla. Kaikissa huoneissa on koneellinen ilmastointi, minibaari, puhelin, TV ja suihku. Huoneista osa on savuttomia ja allergisille on varattu omat huoneet. Hotellissa on myös pieni kokoustila. Viihtyisää saunaosastoa vuokrataan myös yksityiskäyttöön. Malmilta on hyvät yhteydet keskustaan.",
+            "en": "Hotel Avion is a privately owned, modern and comfortable hotel and restaurant in Helsinki Malmi. All the rooms have a minibar, TV and air-conditioning. We also have allergy rooms. Good connections to the city centre. Local train goes every five minutes and the trip takes 10 minutes. Air-port, exhibition centre and ice-stadium Hartwall Arena are also near. There is a possibility to use a computer in Avion (wireless ADSL) and we have an internetbar",
+            "sv": "Hotell Avion är ett bekvämt och fördelaktigt hotell med restaurang i Malm i Helsingfors. Goda trafikförbindelser. Trivsamma möblerade lägenheter hyrs ut även i centrum och i Malm."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Malmin asematie 6",
+            "en": "Malmin asematie 6",
+            "sv": "Malms stationsväg 6"
+         },
+         "address_zip": "00700",
+         "phone": "09 350 7440",
+         "email": "hotelavion@kolumbus.fi",
+         "www_url": {
+            "fi": "http://www.hotelavion.net",
+            "en": "http://www.hotelavion.net/?page=1&lan=uk",
+            "sv": "http://www.hotelavion.net"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:42.124733Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               25.00702,
+               60.24822
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20734,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=linnankatu+9,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=linnankatu+9,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=linnankatu+9,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "eurohostel@eurohostel.fi",
+               "phone": "+358 9 622 0470",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "54"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "Eurohostel Oy",
+            "en": "Eurohostel Oy",
+            "sv": "Eurohostel Oy"
+         },
+         "description": {
+            "fi": "EUROHOSTEL on skandinavian suurimpia ympäri vuoden auki olevia hostelleja. Hostelli sijaitsee lähellä Helsingin ydinkeskustaa ja merta, ainutlaatuisessa kaupunginosassa jugendtyylisten ja vanhojen punatiilisten rakennusten ympäröimänä. Kauppatori, nähtävyydet, keskustan kaupat ja ravintolat ovat kävelyetäisyydellä sekä matkustajalaivat Ruotsiin, Viroon ja Venäjälle vain muutaman askeleen päässä. Jokaisessa majoituskerroksessa on itsepalvelukeittiö ja suihkut ja WC:t. Eurohosteliin pääsee helposti raitiovaunuilla 4 ja 4T joiden pysäkit on aivan hostellin vieressä. Vastaanotto on aina avoinna.",
+            "en": "Eurohostel is one of the largest hostels in Scandinavia open all year around. This city hostel is located close to the sea in central Helsinki - in a unique part of the town surrounded by Art Nouveau buildings and old red brick warehouses. The market square, sights, shops and restaurants of the city centre are all within walking distance and passenger ferries to Sweden, Estonia and Russia are only a few steps away. Eurohostel is also easy to reach by trams that arrive right next to the hostel. All the floors are equipped with a self-service kitchen, showers and washroom facilities for men and women. The reception is always open.",
+            "sv": "Eurohostel på Skatudden är ett skandinaviens största vandrarhem som är öppet dagligen. Vandrarhemmet nära kärncentrum och havet omringat av de vackra byggnaderna i jugendstil. Receptionen är alltid öppen. Varje våning är utrustat med self-service kök och skilda tvättrum för damer och herrar."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Linnankatu 9",
+            "en": "Linnankatu 9",
+            "sv": "Slottsgatan 9"
+         },
+         "address_zip": "00160",
+         "phone": "+358 9 622 0470",
+         "email": "eurohostel@eurohostel.fi",
+         "www_url": {
+            "fi": "http://www.eurohostel.fi/",
+            "en": "http://www.eurohostel.fi",
+            "sv": "http://www.eurohostel.fi"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:14.029005Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.969866,
+               60.165825
+            ],
+            "type": "Point"
+         }
+      },
+      {
+         "id": 20762,
+         "connections": [
+            {
+               "type": 215,
+               "name": {
+                  "fi": "Joukkoliikenneyhteydet tänne",
+                  "en": "Public transport to here",
+                  "sv": "Kollektivtrafik till platsen"
+               },
+               "www_url": {
+                  "fi": "http://www.reittiopas.fi/fi/?to_in=helsinginkatu+17,+helsinki",
+                  "en": "http://www.reittiopas.fi/en/?to_in=helsinginkatu+17,+helsinki",
+                  "sv": "http://www.reittiopas.fi/sv/?to_in=helsinginkatu+17,+helsinki"
+               },
+               "section": "traffic",
+               "contact_person": null,
+               "email": "info@apartmenthelsinki.com",
+               "phone": "0400 876 071",
+               "phone_mobile": null
+            }
+         ],
+         "accessibility_properties": [],
+         "identifiers": [
+            {
+               "namespace": "visithelsinki",
+               "value": "1547"
+            }
+         ],
+         "data_source_url": "http://www.visithelsinki.fi",
+         "name": {
+            "fi": "ApartmentHelsinki",
+            "en": "ApartmentHelsinki",
+            "sv": "ApartmentHelsinki"
+         },
+         "description": {
+            "fi": "Asunto on juuri remontoitu yksiö, jossa on täysin varusteltu keittiö ja kylpyhuone. Majoitustilaa on 1-3 hengelle. Asunto on savuton. Asunnon varustukseen kuuluvat vuodevaatteiden, pyyhkeiden ja astioiden lisäksi astianpesukone, pyykinpesukone, televisio ja stereot sekä maksuton wlan. Hinta sisältää vuodevaatteet, pyyheliinat, asunnossa olevien kodinkoneiden ja astioiden käytön sekä loppusiivouksen.",
+            "en": "This very recently renovated studio apartment has a fully equipped kitchen and a bathroom with shower. Accomodating up to 3 persons. Smoking is prohibited. In the apartment there is a dish washer, washing machine, TV, stereo equipment, w-lan, linen, towels and kitchenware, all included in the room rate.",
+            "sv": "Lägenheten är en nyligen renoverad enrumslägenhet med fullt utrustad kök och badrum. Inkvartering finns för 1-3 personer. Lägenheten är rökfri. I lägenheten finns det diskmaskin, tvättmaskin, TV, stereo, gratis w-lan samt sängkläder, handdukar och komplett köksutrustning."
+         },
+         "provider_type": 100,
+         "street_address": {
+            "fi": "Helsinginkatu 17",
+            "en": "Helsinginkatu 17",
+            "sv": "Helsingegatan 17"
+         },
+         "address_zip": "00500",
+         "phone": "0400 876 071",
+         "email": "info@apartmenthelsinki.com",
+         "www_url": {
+            "fi": "http://www.apartmenthelsinki.com",
+            "en": "http://www.apartmenthelsinki.com/index_eng.html",
+            "sv": "http://www.apartmenthelsinki.com/index_sve.html"
+         },
+         "address_postal_full": null,
+         "picture_url": null,
+         "picture_caption": null,
+         "origin_last_modified_time": "2015-06-12T23:31:34.513161Z",
+         "root_services": [
+            50002
+         ],
+         "department": "1002-MATKO",
+         "organization": 1002,
+         "municipality": "helsinki",
+         "services": [
+            26002
+         ],
+         "divisions": [],
+         "keywords": {},
+         "location": {
+            "coordinates": [
+               24.954327,
+               60.187492
+            ],
+            "type": "Point"
+         }
+      }
+   ]
+}
