@@ -5,6 +5,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
 require('../style/style.css');
+require('../style/style.sass');
 
 
 

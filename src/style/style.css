@@ -13,3 +13,7 @@
     width: 100%;
     background-color: white;
 }
+
+.dateOrTimePicker{
+    width: 50px;
+}
