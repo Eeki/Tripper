@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
 import { connect } from 'react-redux'
 import FlatButton from 'material-ui/FlatButton'
+import Paper from 'material-ui/Paper'
 import { List, ListItem } from 'material-ui/List'
 import Checkbox from 'material-ui/Checkbox'
 
@@ -26,7 +27,9 @@ class AttractionsForm extends Component {
             />
           )}
         </List>
-        <Link to='/infoForm'><FlatButton label='Previous'/></Link>
+        <Paper className="fixed-bottom">
+          <Link to='/infoForm'><FlatButton label='Previous'/></Link>
+        </Paper>
       </div>
     )
   }
