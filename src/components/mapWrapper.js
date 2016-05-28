@@ -3,10 +3,8 @@
  */
 import React, { Component } from 'react';
 import Map from './map';
-import OptionsBar from './optionsBar';
-import Row from 'react-bootstrap/lib/Row';
-import Col from 'react-bootstrap/lib/Col';
 import HotelSelector from './hotelSelector';
+import HotelDrawer from './hotelDrawer';
 class MapWrapper extends Component{
 
 
@@ -14,28 +12,10 @@ class MapWrapper extends Component{
     return (
       <div>
         <Map />
+        <HotelDrawer />
       </div>
     )
   }
 }
 
 export default MapWrapper;
-
-
-/*
-<div >
-  <GridList
-    cols={1}
-    cellHeight={400}
-    padding={0}
-  >
-    <GridTile>
-      <Map />
-    </GridTile>
-
-    <GridTile>
-      <OptionsBar />
-    </GridTile>
-
-  </GridList>
-</div>*/
