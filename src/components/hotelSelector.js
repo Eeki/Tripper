@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component, PropTypes } from 'react'
 import {GridList, GridTile} from 'material-ui/GridList';
+import { connect } from 'react-redux'
 import IconButton from 'material-ui/IconButton';
 import OptionsIcon from 'material-ui/svg-icons/action/build';
 
 export default class HotelSelector extends Component {
 
-
-
   render() {
+
+    console.log(this.props.hotels)
 
     const styles = {
       root: {
@@ -17,51 +18,48 @@ export default class HotelSelector extends Component {
       },
       gridList: {
         width: 500,
-        height: 450,
+        height: 500,
         overflowY: 'auto',
         marginBottom: 24,
-      }
+      },
     };
 
-    const tilesData = [
-      {
-        img: 'assets/img/image1.jpg',
-        title: 'Breakfast',
-        author: 'jill111',
-        featured: true,
-      },
-      {
-        img: 'assets/img/image2.jpg',
-        title: 'Morning',
-        author: 'fancycrave1',
-        featured: true,
-      }
-    ];
+    const {
+      hotels
+    } = this.props;
 
     return(
       <div style={styles.root}>
         <GridList
-          cols={2}
-          cellHeight={200}
-          padding={1}
+          cols={1}
+          cellHeight={100}
           style={styles.gridList}
+          padding={1}
         >
-          {tilesData.map((tile) => (
+          {hotels.map((hotel) =>
             <GridTile
-              key={tile.img}
-              title={tile.title}
-              actionIcon={<IconButton><OptionsIcon color="white" /></IconButton>}
-              actionPosition="left"
-              titlePosition="top"
-              titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-              cols={tile.featured ? 2 : 1}
-              rows={tile.featured ? 2 : 1}
+              key={hotel.name}
+              title={hotel.name}
+              cols={1}
+              rows={1}
             >
-              <img src={tile.img} />
-            </GridTile>
-          ))}
+              <img src={name.thumbnailUrl} />
+              </GridTile>
+          )}
         </GridList>
       </div>
     )
   }
 }
+
+HotelSelector.propTypes = {
+  hotels: PropTypes.array.isRequired
+};
+
+const mapStateToProps = (state) => {
+  return {
+    hotels: state.hotels
+  };
+};
+
+export default connect(mapStateToProps)(HotelSelector);

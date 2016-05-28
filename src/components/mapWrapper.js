@@ -13,19 +13,7 @@ class MapWrapper extends Component{
   render(){
     return (
       <div>
-        <Row className="show-grid">
-          <Col xs={12} md={8}>
-            <Map />
-          </Col>
-          <Col xs={12} md={8} className="options-bar">
-            <OptionsBar />
-          </Col>
-          <Col xs={12} md={8}>
-              <HotelSelector />
-          </Col>
-
-
-        </Row>
+        <Map />
       </div>
     )
   }

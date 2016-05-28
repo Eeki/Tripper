@@ -30,7 +30,15 @@ class AttractionsForm extends Component {
           )}
         </List>
         <Paper rounded={false} className="fixed-bottom">
-          <Link to='/infoForm'><FlatButton label='Previous'/></Link>
+
+          <Link to='/infoForm'>
+            <FlatButton style={{float: 'left'}} label="Previous" primary={false}/>
+          </Link>
+
+          <Link to='/map'>
+          <FlatButton style={{float: 'right'}} label="Next" primary={true}/>
+          </Link>
+
         </Paper>
       </div>
     )

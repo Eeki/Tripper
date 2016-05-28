@@ -34,7 +34,7 @@ class InfoForm extends Component {
 
     return (
       <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="infoForm">
         <div>
           <DatePicker
             hintText="Arrival Date"
@@ -69,14 +69,10 @@ class InfoForm extends Component {
           <NumberOfTravellers  numberOfTravelers={numberOfTravelers}/>
           <span style={{color: "red"}}>{ departureTime.touched && departureTime.error ? departureTime.error : ''} </span>
         </div>
-
-        <div>
-          <RaisedButton type="submit" label="Next" primary={true} />
-        </div>
       </form>
 
         <Paper rounded={false} className="fixed-bottom">
-          <Link to="/attractionsForm"><FlatButton label="Next" primary={true}/></Link>
+          <FlatButton style={{float: 'right'}} form="infoForm" type="submit" label="Next" primary={true}/>
         </Paper>
       </div>
     )

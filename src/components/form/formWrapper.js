@@ -5,7 +5,7 @@ import { savePlan } from '../../actions/index';
 export default class FormWrapper extends Component {
   render() {
     return(
-      <InfoForm onSubmit={ savePlan }/>      
+      <InfoForm onSubmit={ savePlan }/>
     )
   }
 }
