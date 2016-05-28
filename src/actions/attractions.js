@@ -7,14 +7,14 @@ export function toggleAttraction(id) {
   };
 }
 
-function updateAttractions(attractions) {
+export function updateAttractions(attractions) {
   return {
     type: UPDATE_ATTRACTIONS,
     attractions: attractions
   };
 }
 
-export function fetchCoordinates(sites) {
+export function fetchCoordinates(sites, actionCreator) {
   return dispatch => {
     const geocodingEndpoint = "http://api.digitransit.fi/geocoding/v1/search";
     const sitesWithCoordinates = sites.map((site) => {
@@ -23,14 +23,14 @@ export function fetchCoordinates(sites) {
         .then((response) => response.json())
         .then((json) => {
           const coordinates = json.features[0].geometry.coordinates;
-          return Object.assign({}, site, {lat: coordinates[1], lon: coordinates[0]});
+          return Object.assign({}, site, {coords: {lat: coordinates[1], lon: coordinates[0]}});
         }).catch((reason) => {
           console.log(reason);
           return site;
         });
     });
     Promise.all(sitesWithCoordinates).then((sites) => {
-      dispatch(updateAttractions(sites));
+      dispatch(actionCreator(sites));
     });
   };
 }

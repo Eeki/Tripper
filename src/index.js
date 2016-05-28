@@ -9,6 +9,8 @@ import promise from 'redux-promise';
 import reducers from './reducers';
 import routes from './routes';
 import { fetchCoordinates } from './actions/attractions'
+import { updateAttractions } from './actions/attractions'
+import { updateHotels } from './actions/hotels'
 
 const firstStore = applyMiddleware(
   promise,
@@ -16,8 +18,8 @@ const firstStore = applyMiddleware(
 )(createStore);
 const store = firstStore(reducers, window.devToolsExtension ? window.devToolsExtension() : f => f);
 
+store.dispatch(fetchCoordinates(store.getState().attractions, updateAttractions));
 
-store.dispatch(fetchCoordinates(store.getState().attractions));
 
 ReactDOM.render(
   <Provider store={store} >
