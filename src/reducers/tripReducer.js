@@ -1,5 +1,6 @@
-import { OPTIMIZE_TRIP } from '../actions/const'
+import { OPTIMIZE_START } from '../actions/const'
 
+// a list of journeys, one should contain fully optimized results (at some point, at least)
 const initialState = [
   {
     time: 300,
