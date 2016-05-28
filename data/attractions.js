@@ -315,7 +315,7 @@ export default function() {
     {
       "name": "Tori Quarters",
       "thumbnailUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Visit-suomi-2009-05-by-RalfR-224.jpg/640px-Visit-suomi-2009-05-by-RalfR-224.jpg",
-      "address": "Unioninkatu-Sofiankatu-Katariinankatu-Helenankatu,  00170 Helsinki",
+      "address": "Sofiankatu 1, 00170 Helsinki",
       "minDuration": 20,
       "price": 0,
       "description": "Visit Tori Quarters in the historical centre of Helsinki to discover the heart of the old town meeting the new buzz of the city. The historical buildings of Tori Quarters, used for administration offices for over 40 years, are now being renovated, opening up new spaces for new businesses and Helsinki-dwellers and travellers alike."
