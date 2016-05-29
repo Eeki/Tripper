@@ -131,7 +131,10 @@ export default class Map extends Component {
           function(el) {
             return (el.start.id==start && el.end.id==end);
           }
-        )[0]
+        )[0];
+        if (trip.data == "undefined") {
+          continue;
+        }
         const legs = trip.data[0].legs;
         legs.map(
           function (leg) {
