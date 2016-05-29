@@ -1,7 +1,7 @@
 export default function() {
   return [
       {
-          "id": 1,
+          "id": "a",
           "name": "Rastilan leirintäalue",
           "thumbnailUrl": "https://q.bstatic.com/images/hotel/840x460/404/40411440.jpg",
           "address": "Karavaanikatu 4,  00980",
@@ -13,7 +13,7 @@ export default function() {
           "price": 89
       },
       {
-          "id": 2,
+          "id": "b",
           "name": "Holiday Inn Helsinki Messukeskus",
           "thumbnailUrl": "https://r.bstatic.com/images/hotel/840x460/142/14253075.jpg",
 
@@ -26,7 +26,7 @@ export default function() {
           "price": 109
       },
       {
-          "id": 3,
+          "id": "c",
           "name": "City Apartments",
           "thumbnailUrl": "https://r.bstatic.com/images/hotel/max1024x768/645/64594933.jpg",
           "address": "Vuorikatu 18,  00100",
@@ -38,7 +38,7 @@ export default function() {
           "price": 83
       },
       {
-          "id": 4,
+          "id": "d",
           "name": "Solo Sokos Hotel Torni",
           "thumbnailUrl": "https://q.bstatic.com/images/hotel/840x460/449/44960504.jpg",
           "address": "Yrjönkatu 26,  00100",
@@ -50,7 +50,7 @@ export default function() {
           "price": 139
       },
       {
-          "id": 5,
+          "id": "e",
           "name": "Hilton Helsinki Strand",
           "thumbnailUrl": "https://r.bstatic.com/images/hotel/840x460/154/15488848.jpg",
           "address": "John Stenbergin ranta 4,  00530",
@@ -62,7 +62,7 @@ export default function() {
           "price": 142
       },
       {
-          "id": 6,
+          "id": "f",
           "name": "Next Hotel Rivoli Jardin",
           "thumbnailUrl": "https://r.bstatic.com/images/hotel/840x460/253/2531888.jpg",
           "address": "Kasarmikatu 40,  00130",
@@ -74,7 +74,7 @@ export default function() {
           "price": 155
       },
       {
-          "id": 7,
+          "id": "g",
           "name": "Hellsten Helsinki Senate - Penthouse",
           "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/max1024x768/158/15857645.jpg",
           "address": "Kauppiaankatu 5,  00160",
@@ -86,7 +86,7 @@ export default function() {
           "price": 127
       },
       {
-          "id": 8,
+          "id": "h",
           "name": "AEL-Hotelli",
           "thumbnailUrl": "https://www.ael.fi/sites/default/files/styles/page_slider/public/aelhotelli.jpg?itok=gvhfXZj7",
           "address": "Jälsitie 5,  00410",
@@ -98,7 +98,7 @@ export default function() {
           "price": 160
       },
       {
-          "id": 9,
+          "id": "i",
           "name": "Original Sokos Hotel Helsinki",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/481/48159164.jpg",
           "address": "Kluuvikatu 8,  00100",
@@ -110,7 +110,7 @@ export default function() {
           "price": 154
       },
       {
-          "id": 10,
+          "id": "j",
           "name": "Original Sokos Hotel Pasila",
           "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/150/15031928.jpg",
           "address": "Maistraatinportti 3,  00240",
@@ -122,7 +122,7 @@ export default function() {
           "price": 141
       },
       {
-          "id": 11,
+          "id": "k",
           "name": "Radisson Blu Aleksanteri Hotel",
           "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/657/65784731.jpg",
           "address": "Albertinkatu 34,  00180",
@@ -134,7 +134,7 @@ export default function() {
           "price": 202
       },
       {
-          "id": 12,
+          "id": "l",
           "name": "Hilton Helsinki Kalastajatorppa",
           "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/382/38287404.jpg",
           "address": "Kalastajatorpantie 1,  00330",
@@ -146,7 +146,7 @@ export default function() {
           "price": 129
       },
       {
-          "id": 13,
+          "id": "m",
           "name": "Kotihotelli Oy",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/max1024x768/576/57628163.jpg",
           "address": "Uudenmaankatu 26,  00120",
@@ -158,7 +158,7 @@ export default function() {
           "price": 110
       },
       {
-          "id": 14,
+          "id": "n",
           "name": "Hotel Haven",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/659/65934325.jpg",
           "address": "Unioninkatu 17,  00130",
@@ -170,7 +170,7 @@ export default function() {
           "price": 197
       },
       {
-          "id": 15,
+          "id": "o",
           "name": "Best Western Hotel Rantapuisto",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/316/31627749.jpg",
           "address": "Ramsinniementie 16,  00980",
@@ -182,7 +182,7 @@ export default function() {
           "price": 89
       },
       {
-          "id": 16,
+          "id": "p",
           "name": "Scandic Grand Marina",
           "thumbnailUrl": "http://r-ec.bstatic.com/images/hotel/840x460/557/5579066.jpg",
           "address": "Katajanokanlaituri 7,  00160",
@@ -194,7 +194,7 @@ export default function() {
           "price": 150
       },
       {
-          "id": 17,
+          "id": "q",
           "name": "GLO Hotel Art",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/143/14360286.jpg",
           "address": "Lönnrotinkatu 29,  00180",
@@ -206,7 +206,7 @@ export default function() {
           "price": 129
       },
       {
-          "id": 18,
+          "id": "r",
           "name": "Hotelli Avion",
           "thumbnailUrl": "https://q.bstatic.com/images/hotel/840x460/693/69328873.jpg",
           "address": "Malmin asematie 6,  00700",
@@ -218,7 +218,7 @@ export default function() {
           "price": 80
       },
       {
-          "id": 19,
+          "id": "s",
           "name": "Eurohostel Oy",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/840x460/558/5583842.jpg",
           "address": "Linnankatu 9,  00160",
@@ -230,7 +230,7 @@ export default function() {
           "price": 58
       },
       {
-          "id": 0,
+          "id": "t",
           "name": "ApartmentHelsinki",
           "thumbnailUrl": "http://q-ec.bstatic.com/images/hotel/max1024x768/673/67319008.jpg",
           "address": "Helsinginkatu 17,  00500",

@@ -231,7 +231,8 @@ function optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, dur
     // and then focus on
     var bestSoFar = {
         duration: Infinity,
-        dayOrders: null
+        days: null,
+        hotelId: hotelId
     };
     var attractionPermutations = Combinatorics.permutation(attractionIds).toArray();
     for (var permutation of attractionPermutations) {
@@ -249,7 +250,7 @@ function optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, dur
         }
         if (evaluatedDuration < bestSoFar.duration) {
             bestSoFar.duration = evaluatedDuration;
-            bestSoFar.dayOrders = dayOrders;
+            bestSoFar.days = dayOrders;
         }
         console.log(permutation, dayOrders);
         console.log("multiple duration", bestSoFar.duration);
@@ -257,18 +258,7 @@ function optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, dur
     return bestSoFar;
 }
 
-function evaluateDayOrder(hotelId, attractionsOrder, durationsH2A, durationsA2A) {
-    var totDuration = 0;
-    totDuration += durationsH2A[hotelId][attractionsOrder[0]];
-    for (var i=0; i < attractionsOrder.length-1; i++) {
-        var startLocId = attractionsOrder[i];
-        var endLocId = attractionsOrder[i+1];
-        console.log(durationsA2A);
-        totDuration += durationsA2A[startLocId][endLocId];
-    }
-    totDuration += durationsH2A[hotelId][attractionsOrder[attractionsOrder.length-1]];
-    return totDuration
-}
+
 
 var hotelId = 10;
 var attractionIds = [1,3,4];
@@ -303,3 +293,4 @@ var durationsA2A = {
 
 // optimizeOneDay(hotelId, attractionIds, durationsH2A, durationsA2A);
 optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, durationsA2A, nDays);
+
