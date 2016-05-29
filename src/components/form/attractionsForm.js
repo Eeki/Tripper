@@ -94,9 +94,9 @@ class AttractionsForm extends Component {
             style={{float: 'right'}}
             label="Calculate" secondary={true}
             onClick={() => calculate(attractions.filter(a => a.selected), hotels)}
-              />
-            </Paper>
-            </div>
+          />
+        </Paper>
+      </div>
     )
   }
 }
