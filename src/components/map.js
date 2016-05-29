@@ -90,7 +90,7 @@ export default class Map extends Component {
 
   }
 
-  componentDidUpdate() {
+  componentDidUpdate(prevProps, prevState) {
     this.loadSelectedAttractions(this.attractions);
     this.loadRoutes(this.routes);
   }
@@ -117,13 +117,13 @@ export default class Map extends Component {
       this.props.hotelTrips[hotelIndex].days.map( (day)=>{
         day.map((attractio)=>{
           tripPlan.push(attractio)
-        })
+        });
         tripPlan.push(this.props.hotelTrips[hotelIndex].hotelId)
-      })
+      });
 
       console.log("tripPlan",tripPlan);
 
-      let polylinesEncoded = []
+      let polylinesEncoded = [];
       for(let i = 0; i<tripPlan.length-1; i++ ) {
         const start = tripPlan[i];
         const end = tripPlan[i+1];
@@ -139,7 +139,6 @@ export default class Map extends Component {
           }
         )
       }
-
       console.log(polylinesEncoded);
     }
 
