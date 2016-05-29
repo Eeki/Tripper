@@ -12,6 +12,17 @@ import Col from 'react-bootstrap/lib/Col';
 
 import Paper from 'material-ui/Paper'
 
+import {
+cyan500, cyan700,
+grey100, grey300, grey400, grey500,
+pinkA200,
+white, darkBlack, fullBlack,
+} from 'material-ui/styles/colors';
+import {fade} from 'material-ui/utils/colorManipulator';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import AppBar from 'material-ui/AppBar';
+
 export const fields = [ 'arrivalDate', 'arrivalTime', 'departureDate', 'departureTime', 'numberOfTravelers' ];
 
 const validate = values => {
@@ -23,6 +34,28 @@ const validate = values => {
   if (!values.numberOfTravelers || values.numberOfTravelers<1) errors.numberOfTravelers = 'Required';
   return errors
 };
+
+const muiTheme = getMuiTheme ({
+  spacing: {
+  },
+  fontFamily: 'Roboto, sans-serif',
+  palette: {
+    primary1Color: "#f092cd",
+    primary2Color: "#f092cd",
+    primary3Color: "#f092cd",
+    accent1Color: pinkA200,
+    accent2Color: grey100,
+    accent3Color: grey500,
+    textColor: darkBlack,
+    alternateTextColor: white,
+    canvasColor: white,
+    borderColor: grey300,
+    disabledColor: fade(darkBlack, 0.3),
+    pickerHeaderColor: cyan500,
+    clockCircleColor: fade(darkBlack, 0.07),
+    shadowColor: fullBlack,
+  },
+});
 
 class InfoForm extends Component {
 
@@ -38,56 +71,63 @@ class InfoForm extends Component {
     };
 
     return (
-      <div>
-      <form onSubmit={handleSubmit} id="infoForm">
-        <div>
-          <label className="formLabel">Arrival</label>
+      <div className="container">
+        <h1>Tripper</h1>
+        <p className="lead">Make the best of your trip. Find hotels based on the attractions you’ll see.</p>
+        <form onSubmit={handleSubmit} id="infoForm">
+          <div>
+            <label className="formLabel">Arrival</label>
+            <Row>
+              <Col xs={4}>
+                <MuiThemeProvider muiTheme={muiTheme}>
+                  <DatePicker
+                    className="dateOrTimePicker"
+                    hintText="Date"
+                    value={arrivalDate.value}
+                    {...arrivalDate}
+                    onChange = {(event, date) => arrivalDate.onChange(date)}
+                    errorText={ arrivalDate.touched && arrivalDate.error ? arrivalDate.error : ''}
+                    style = {{width: 100}}
+                  />
+                </MuiThemeProvider>
+              </Col>
+              <Col xs={4}>
+                <MuiThemeProvider muiTheme={muiTheme}>
+                  <TimePicker
+                    className="dateOrTimePicker"
+                    hintText="Time"
+                    onChange = {(event, date) => arrivalTime.onChange(date)}
+                    errorText={ arrivalTime.touched && arrivalTime.error ? arrivalTime.error : ''}
+                  />
+                </MuiThemeProvider>
+              </Col>
+            </Row>
+          </div>
+          <label className="formLabel">Departure</label>
           <Row>
             <Col xs={4}>
-              <DatePicker
-                className="dateOrTimePicker"
-                hintText="Date"
-                value={arrivalDate.value}
-                {...arrivalDate}
-                onChange = {(event, date) => arrivalDate.onChange(date)}
-                errorText={ arrivalDate.touched && arrivalDate.error ? arrivalDate.error : ''}
-                style = {{width: 100}}
-              />
+              <MuiThemeProvider muiTheme={muiTheme}>
+                <DatePicker
+                  hintText="Date"
+                  value={departureDate.value}
+                  {...departureDate}
+                  onChange = {(event, date) => departureDate.onChange(date)}
+                  errorText={ departureDate.touched && departureDate.error ? departureDate.error : ''}
+                />
+              </MuiThemeProvider>
             </Col>
             <Col xs={4}>
-              <TimePicker
-                className="dateOrTimePicker"
-                hintText="Time"
-                onChange = {(event, date) => arrivalTime.onChange(date)}
-                errorText={ arrivalTime.touched && arrivalTime.error ? arrivalTime.error : ''}
-              />
+              <MuiThemeProvider muiTheme={muiTheme}>
+                <TimePicker
+                  hintText="Time"
+                  onChange = {(event, date) => departureTime.onChange(date)}
+                  errorText={ departureTime.touched && departureTime.error ? departureTime.error : ''}
+                />
+              </MuiThemeProvider>
             </Col>
           </Row>
-
-        </div>
-        <label className="formLabel">Departure</label>
-        <Row>
-          <Col xs={4}>
-            <DatePicker
-              hintText="Date"
-              value={departureDate.value}
-              {...departureDate}
-              onChange = {(event, date) => departureDate.onChange(date)}
-              errorText={ departureDate.touched && departureDate.error ? departureDate.error : ''}
-            />
-          </Col>
-          <Col xs={4}>
-            <TimePicker
-              hintText="Time"
-              onChange = {(event, date) => departureTime.onChange(date)}
-              errorText={ departureTime.touched && departureTime.error ? departureTime.error : ''}
-            />
-          </Col>
-
-        </Row>
-
-        <div>
-          <NumberOfTravellers  numberOfTravelers={numberOfTravelers}/>
+          <div>
+            <NumberOfTravellers  numberOfTravelers={numberOfTravelers}/>
           <span style={{color: "red"}}>{ numberOfTravelers.touched && numberOfTravelers.error ? numberOfTravelers.error : ''} </span>
         </div>
       </form>

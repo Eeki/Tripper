@@ -22,6 +22,7 @@ class AttractionsForm extends Component {
     return (
       <div>
         <h2>Choose attractions</h2>
+        <p className="lead text-center">Choose the attractions that you want to experience</p>
         <List>
           {attractions.map((attraction) =>
             <ListItem
@@ -90,7 +91,7 @@ class AttractionsForm extends Component {
           <Link to='/map'>
             <FlatButton style={{float: 'right'}} label="Next" primary={true} />
           </Link>
-          <FlatButton 
+          <FlatButton
             style={{float: 'right'}}
             label="Calculate" secondary={true}
             onClick={() => calculate(attractions.filter(a => a.selected), hotels)}
