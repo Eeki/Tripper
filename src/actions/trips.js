@@ -143,6 +143,9 @@ function optimize(allTrips) {
     // fix two days, to show off
     results.push(optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, durationsA2A, 2));
   }
+  results.sort( function(a, b) {
+    return a.duration - b.duration;
+  });
   return results;
 }
 
@@ -181,8 +184,8 @@ function optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, dur
       bestSoFar.duration = evaluatedDuration;
       bestSoFar.days = dayOrders;
     }
-    console.log(permutation, dayOrders);
-    console.log("multiple duration", bestSoFar.duration);
+    // console.log(permutation, dayOrders);
+    // console.log("multiple duration", bestSoFar.duration);
   }
   return bestSoFar;
 }
@@ -193,7 +196,7 @@ function evaluateDayOrder(hotelId, attractionsOrder, durationsH2A, durationsA2A)
   for (var i=0; i < attractionsOrder.length-1; i++) {
     var startLocId = attractionsOrder[i];
     var endLocId = attractionsOrder[i+1];
-    console.log(durationsA2A);
+    // console.log(durationsA2A);
     totDuration += durationsA2A[startLocId][endLocId];
   }
   totDuration += durationsH2A[hotelId][attractionsOrder[attractionsOrder.length-1]];
