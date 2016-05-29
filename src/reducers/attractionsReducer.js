@@ -20,7 +20,7 @@ export const attractionsReducer = (state = attractions, action) => {
       if (state[0].selected === undefined) {
         return state.map((attraction, index) => {
           return Object.assign({}, attraction, {
-            id: index,
+            id: "a" + index,
             selected: false
           });
         });

@@ -77,7 +77,7 @@ export default class Map extends Component {
         },
         "paint": {
           "line-color": "#f90000",
-          "line-width": 8
+          "line-width": 1
         }
       });
       
@@ -95,46 +95,68 @@ export default class Map extends Component {
   }
 
   loadRoutes(routes) {
-    const fakeRoutes = [
+/*    const fakeRoutes = [
       {geometry: "_p~iF~ps|U_ulLnnqC_mqNvxq`@"},
       {geometry: "khnnJulbwCADe@~@Ip@"}
-    ];
+    ];*/
     
-      fakeRoutes.map(function(route) {
-      console.log("route",route)
-      const feature = {
-        "type": "Feature",
-        "properties": {
-          "stroke": "#f90000",
-          "stroke-width": 6,
-          "stroke-opacity": 1
-        },
-        "geometry": {
-          "type": "LineString",
-          "coordinates": polyline.decode(route.geometry)
-        }
-      };
-      routes.features.push(feature);
+      this.props.trips.map(function(trip) {
+        console.log("trip",trip);
+
+        trip.data[0].legs.map(function(leg) {
+
+          const polyLineArray = polyline.decode(leg.legGeometry.points)
+          const reversepolyLineArray = [];
+          polyLineArray.map(function(coords) {
+            reversepolyLineArray.push([coords[1], coords[0]])
+          });
+
+          let color;
+          console.log("leg.mode",leg.mode)
+
+          switch (leg.mode) {
+            case "WALK":
+              color = "#000000";
+              break;
+            default:
+              color = "#f90000";
+              break;
+          }
+
+          const feature = {
+            "type": "Feature",
+            "properties": {
+              "stroke": color,
+              "stroke-width": 1,
+              "stroke-opacity": 1
+            },
+            "geometry": {
+              "type": "LineString",
+              "coordinates": reversepolyLineArray
+            }
+          }
+          routes.features.push(feature);
+        });
     })
-    console.log("routes", routes)
   }
 
   loadSelectedAttractions(attractions) {
     //Oikeesti haetaan this.props.attractions jne...
-    const fakeAttractions = [{lon:24.942432,lat:60.163694, selected: true}, {lon:24.952432,lat:60.173694, selected: true}];
-    fakeAttractions.map((attraction) => {
+
+    this.props.attractions.map((attraction) => {
       if(attraction.selected){
+        console.log("attraction");
         const feature = {
           "type": "Feature",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              attraction.lon,
-              attraction.lat
+              attraction.coords.lon,
+              attraction.coords.lat
             ]
           }
         };
-        console.log(feature);
+        //console.log(feature);
         attractions.features.push(feature);
       }
     });
@@ -144,7 +166,8 @@ export default class Map extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    attractions: state.attractions
+    attractions: state.attractions,
+    trips: state.trips
   };
 };
 

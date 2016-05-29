@@ -22,7 +22,6 @@ export default class HotelSelector extends Component {
 
 
   render() {
-
     return(
       <div className="hotel-selector">
         <Carousel slideWidth={0.9} cellAlign="center">
