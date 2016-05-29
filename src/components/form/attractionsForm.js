@@ -21,7 +21,10 @@ class AttractionsForm extends Component {
 
     return (
       <div>
-        <h2>Choose attractions</h2>
+        <div className="navbar">
+          <Link to="infoForm">Preferences</Link>
+          Attractions
+        </div>
         <p className="lead text-center">Choose the attractions that you want to experience</p>
         <List>
           {attractions.map((attraction) =>
