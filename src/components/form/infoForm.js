@@ -148,9 +148,10 @@ class InfoForm extends Component {
         </div>
       </form>
 
-        <Paper rounded={false} className="fixed-bottom">
-          <FlatButton style={{float: 'right'}} form="infoForm" type="submit" label="Next" primary={true}/>
-        </Paper>
+      <button form="infoForm" type="submit" className="fixed-bottom next-button">
+        Next
+      </button>
+
       </div>
     )
   }
