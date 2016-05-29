@@ -160,3 +160,30 @@ export const tripReducer = (state = initialState, action) => {
       return state;
   }
 }
+
+const hotelTripsMock = [
+  {
+    hotelId: 19,
+    duration: 150,
+    days: [
+      [2, 5, 1],
+      [3, 6]
+    ]
+  },
+  {
+    hotelId: 3,
+    duration: 150,
+    days: [
+      [6, 1],
+      [3, 5],
+      [2]
+    ]
+  }
+]
+
+export const hotelTripReducer = (state = hotelTripsMock, action) => {
+  switch (action.type) {
+    default:
+      return state;
+  }
+}
