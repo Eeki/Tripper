@@ -85,21 +85,15 @@ class AttractionsForm extends Component {
             />
           )}
         </List>
-        <Paper rounded={false} className="fixed-bottom">
 
-          <Link to='/infoForm'>
-            <FlatButton style={{float: 'left'}} label="Previous" primary={false} />
-          </Link>
-
-          <Link to='/map'>
-            <FlatButton style={{float: 'right'}} label="Next" primary={true} />
-          </Link>
-          <FlatButton
-            style={{float: 'right'}}
-            label="Calculate" secondary={true}
+        <Link to='map' >
+          <button
+            className="fixed-bottom next-button" 
             onClick={() => calculate(attractions.filter(a => a.selected), hotels)}
-          />
-        </Paper>
+          >
+            Next
+          </button>
+        </Link>
       </div>
     )
   }
