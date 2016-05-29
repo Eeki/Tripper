@@ -1,5 +1,4 @@
-export default function() {
-  return [
+export const hotels = [
       {
           "id": "a",
           "name": "Rastilan leirintäalue",
@@ -241,5 +240,4 @@ export default function() {
           "description": "This very recently renovated studio apartment has a fully equipped kitchen and a bathroom with shower. Accomodating up to 3 persons. Smoking is prohibited. In the apartment there is a dish washer, washing machine, TV, stereo equipment, w-lan, linen, towels and kitchenware, all included in the room rate.",
           "price": 109
       }
-  ]
-}
+  ];
