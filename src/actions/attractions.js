@@ -18,7 +18,7 @@ export function fetchCoordinates(sites, actionCreator) {
   return dispatch => {
     const geocodingEndpoint = "http://api.digitransit.fi/geocoding/v1/search";
     const sitesWithCoordinates = sites.map((site) => {
-      const query = `${geocodingEndpoint}?text=${location.address}&size=1`
+      const query = `${geocodingEndpoint}?text=${site.address}&size=1`
       return fetch(encodeURI(query))
         .then((response) => response.json())
         .then((json) => {

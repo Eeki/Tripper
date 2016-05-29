@@ -15,3 +15,7 @@ export const TRIP_ROUTE_START = "TRIP_ROUTE_START";
 export const TRIP_ROUTE_SUCCESS = "TRIP_ROUTE_SUCCESS";
 export const TRIP_ROUTE_FAILURE = "TRIP_ROUTE_FAILURE";
 
+
+export const HOTEL = 'HOTEL';
+export const LUNCH = 'LUNCH';
+export const ATTRACTION = 'ATTRACTION';
