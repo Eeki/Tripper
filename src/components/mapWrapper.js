@@ -3,6 +3,7 @@
  */
 import React, { Component } from 'react';
 import Map from './map';
+import HotelSelector from './hotelSelector';
 
 
 class MapWrapper extends Component{
@@ -11,6 +12,7 @@ class MapWrapper extends Component{
     return (
       <div>
         <Map />
+        <HotelSelector />
       </div>
     )
   }

@@ -41,7 +41,7 @@ class InfoForm extends Component {
       <div>
       <form onSubmit={handleSubmit} id="infoForm">
         <div>
-          <label>Arrival</label>
+          <label className="formLabel">Arrival</label>
           <Row>
             <Col xs={4}>
               <DatePicker
@@ -65,7 +65,7 @@ class InfoForm extends Component {
           </Row>
 
         </div>
-        <label>Departure</label>
+        <label className="formLabel">Departure</label>
         <Row>
           <Col xs={4}>
             <DatePicker
