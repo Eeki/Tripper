@@ -1,8 +1,4 @@
-import { TRIP_ROUTE_SUCCESS } from '../actions/const'
-
-const HOTEL = 'HOTEL';
-const LUNCH = 'LUNCH';
-const ATTRACTION = 'ATTRACTION';
+import { TRIP_ROUTE_SUCCESS, HOTEL, LUNCH, ATTRACTION } from '../actions/const'
 
 // a list of journeys, one should contain fully optimized results (at some point, at least)
 const initialState = [
@@ -159,7 +155,6 @@ const initialState = [
 export const tripReducer = (state = initialState, action) => {
   switch (action.type) {
     case TRIP_ROUTE_SUCCESS:
-    debugger;
       return action.trips;
     default:
       return state;

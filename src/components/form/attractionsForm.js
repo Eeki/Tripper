@@ -14,6 +14,7 @@ class AttractionsForm extends Component {
   render() {
     const {
       attractions,
+      hotels,
       calculate,
       toggleAttraction
     } = this.props;
@@ -44,7 +45,7 @@ class AttractionsForm extends Component {
           <FlatButton 
             style={{float: 'right'}} 
             label="Calculate" secondary={true} 
-            onClick={() => calculate(attractions.filter(a => a.selected))}
+            onClick={() => calculate(attractions.filter(a => a.selected), hotels)}
           />
         </Paper>
       </div>
@@ -54,13 +55,15 @@ class AttractionsForm extends Component {
 
 AttractionsForm.propTypes = {
   attractions: PropTypes.array.isRequired,
+  hotels: PropTypes.array.isRequired,
   calculate: PropTypes.func.isRequired,
   toggleAttraction: PropTypes.func.isRequired
 };
 
 const mapStateToProps = (state) => {
   return {
-    attractions: state.attractions
+    attractions: state.attractions,
+    hotels: state.hotels
   };
 };
 
@@ -69,8 +72,8 @@ const mapDispatchToProps = (dispatch) => {
     toggleAttraction: (id) => {
       dispatch(toggleAttraction(id));
     },
-    calculate: (attractions) => {
-      dispatch(fetchTrips(attractions));
+    calculate: (attractions, hotels) => {
+      dispatch(fetchTrips(attractions, hotels));
     }
   };
 };
