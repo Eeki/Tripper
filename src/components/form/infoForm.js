@@ -43,9 +43,9 @@ const muiTheme = getMuiTheme ({
     primary1Color: "#f092cd",
     primary2Color: "#f092cd",
     primary3Color: "#f092cd",
-    accent1Color: pinkA200,
-    accent2Color: grey100,
-    accent3Color: grey500,
+    accent1Color: "#f092cd",
+    accent2Color: "#f092cd",
+    accent3Color: "#f092cd",
     textColor: darkBlack,
     alternateTextColor: white,
     canvasColor: white,
@@ -55,6 +55,22 @@ const muiTheme = getMuiTheme ({
     clockCircleColor: fade(darkBlack, 0.07),
     shadowColor: fullBlack,
   },
+  timePicker: {
+    primary1Color: "#f092cd",
+    primary2Color: "#f092cd",
+    primary3Color: "#f092cd",
+    accent1Color: "#f092cd",
+    accent2Color: "#f092cd",
+    accent3Color: "#f092cd",
+    textColor: darkBlack,
+    alternateTextColor: white,
+    canvasColor: white,
+    borderColor: grey300,
+    disabledColor: fade(darkBlack, 0.3),
+    pickerHeaderColor: cyan500,
+    clockCircleColor: fade(darkBlack, 0.07),
+    shadowColor: fullBlack,
+  }
 });
 
 class InfoForm extends Component {
