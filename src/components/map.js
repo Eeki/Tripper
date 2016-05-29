@@ -95,28 +95,49 @@ export default class Map extends Component {
   }
 
   loadRoutes(routes) {
-    const fakeRoutes = [
+/*    const fakeRoutes = [
       {geometry: "_p~iF~ps|U_ulLnnqC_mqNvxq`@"},
       {geometry: "khnnJulbwCADe@~@Ip@"}
-    ];
+    ];*/
     
-      fakeRoutes.map(function(route) {
-      console.log("route",route)
-      const feature = {
-        "type": "Feature",
-        "properties": {
-          "stroke": "#f90000",
-          "stroke-width": 6,
-          "stroke-opacity": 1
-        },
-        "geometry": {
-          "type": "LineString",
-          "coordinates": polyline.decode(route.geometry)
-        }
-      };
-      routes.features.push(feature);
+      this.props.trips.map(function(trip) {
+        console.log("trip",trip);
+
+        trip.data[0].legs.map(function(leg) {
+
+          const polyLineArray = polyline.decode(leg.legGeometry.points)
+          const reversepolyLineArray = [];
+          polyLineArray.map(function(coords) {
+            reversepolyLineArray.push([coords[1], coords[0]])
+          });
+
+          let color;
+          console.log("leg.mode",leg.mode)
+
+          switch (leg.mode) {
+            case "WALK":
+              color = "#000000";
+              break;
+            default:
+              color = "#f90000";
+              break;
+          }
+
+          const feature = {
+            "type": "Feature",
+            "properties": {
+              "stroke": color,
+              "stroke-width": 2,
+              "stroke-opacity": 3
+            },
+            "geometry": {
+              "type": "LineString",
+              "coordinates": reversepolyLineArray
+            }
+          }
+          routes.features.push(feature);
+        });
     })
-    console.log("routes", routes)
   }
 
   loadSelectedAttractions(attractions) {
@@ -134,7 +155,7 @@ export default class Map extends Component {
             ]
           }
         };
-        console.log(feature);
+        //console.log(feature);
         attractions.features.push(feature);
       }
     });
@@ -144,7 +165,8 @@ export default class Map extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    attractions: state.attractions
+    attractions: state.attractions,
+    trips: state.trips
   };
 };
 
