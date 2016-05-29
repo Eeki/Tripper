@@ -84,16 +84,22 @@ export default class Map extends Component {
         }
       });
       
-      //this.loadSelectedAttractions(this.attractions);
-      //this.loadRoutes(this.routes);
+      this.loadSelectedAttractions(this.attractions);
+      this.loadRoutes(this.routes);
     });
 
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    this.loadSelectedAttractions(this.attractions);
-    this.loadRoutes(this.routes);
-  }
+
+ /* componentWillReceiveProps(nextProps) {
+    console.log("nextProps",nextProps);
+    if(nextProps.trips || nextProps.type == "FeatureCollection") {
+      this.loadSelectedAttractions(this.attractions);
+      this.loadRoutes(this.routes);
+    }
+  }*/
+
+
 
 
   render() {
@@ -121,7 +127,7 @@ export default class Map extends Component {
         tripPlan.push(this.props.hotelTrips[hotelIndex].hotelId)
       });
 
-      console.log("tripPlan",tripPlan);
+      //console.log("tripPlan",tripPlan);
 
       let polylinesEncoded = [];
       for(let i = 0; i<tripPlan.length-1; i++ ) {
@@ -132,22 +138,49 @@ export default class Map extends Component {
             return (el.start.id==start && el.end.id==end);
           }
         )[0];
+
         if (trip.data == "undefined") {
           continue;
         }
         const legs = trip.data[0].legs;
         legs.map(
           function (leg) {
-            polylinesEncoded.push(leg.legGeometry.points);
+            polylinesEncoded.push(polyline.decode(leg.legGeometry.points));
+            //console.log("AAAAAAAA",polyline.decode(leg.legGeometry.points))
           }
         )
       }
-      console.log(polylinesEncoded);
+      polylinesEncoded = [].concat.apply([], polylinesEncoded);
+
+
+      //console.log(polylinesEncoded);
+      const reversepolyLineArray = [];
+      polylinesEncoded.map(function(coords) {
+        reversepolyLineArray.push([coords[1], coords[0]])
+      });
+
+
+
+      const feature = {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#f90000",
+          "stroke-width": 1,
+          "stroke-opacity": 1
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": reversepolyLineArray
+        }
+      }
+      routes.features[0] = feature;
+      console.log("routes",routes)
+
+
     }
 
 
-    
-      this.props.trips.map(function(trip) {
+      /*this.props.trips.map(function(trip) {
         //console.log("trip",trip);
 
         if(trip.data){
@@ -186,7 +219,7 @@ export default class Map extends Component {
             routes.features.push(feature);
           });
         }
-    })
+    })*/
   }
 
   loadSelectedAttractions(attractions) {

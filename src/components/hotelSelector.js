@@ -20,7 +20,7 @@ export default class HotelSelector extends Component {
     return this.props.hotelTrips.map( (hotelTrip) => {
       const hotel = this.findHotelInfo(hotelTrip.hotelId);
       if (hotel) {
-        console.log("hotel",hotel);
+        //console.log("hotel",hotel);
         return (
           <div key={hotel.id}>
             <div style={
