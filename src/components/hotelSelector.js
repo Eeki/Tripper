@@ -15,23 +15,26 @@ export default class HotelSelector extends Component {
   }
 
   renderHotels() {
-    return this.props.hotelTrips.map( (hotelTrip) => {
-      const hotel = this.findHotelInfo(hotelTrip.hotelId);
-      if(hotel){
-        console.log("hotel",hotel);
-        return (
-          <div key={hotel.name}>
-            <div  style={
+    if(this.props.hotelTrips){
+      return this.props.hotelTrips.map( (hotelTrip) => {
+        const hotel = this.findHotelInfo(hotelTrip.hotelId);
+        if(hotel){
+          //console.log("hotel",hotel);
+          return (
+            <div key={hotel.name}>
+              <div  style={
           {backgroundImage: 'url(' + hotel.thumbnailUrl + ')',
           height: 20+"vh",
           backgroundSize: "cover",
           backgroundPosition: "center"
           }
           }></div>
-          </div>
-        );
-      }
-    });
+            </div>
+          );
+        }
+      });
+    }
+
   }
 
 

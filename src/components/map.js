@@ -12,6 +12,8 @@ export default class Map extends Component {
 
   constructor(props) {
     super(props);
+    this.attractions;
+    this.routes;
 
     this.map;
   }
@@ -28,17 +30,17 @@ export default class Map extends Component {
     });
 
     //##### GEOJSONS############//
-    let attractions = {
+    this.attractions = {
       "type": "FeatureCollection",
       "features": []
     };
 
-    let routes = {
+    this.routes = {
       "type": "FeatureCollection",
       "features": []
     };
 
-    let hotelli = {
+    let hotel = {
       "type": "Feature",
       "geometry": {
         "type": "Point",
@@ -51,11 +53,11 @@ export default class Map extends Component {
     this.map.on('load', () => {
       this.map.addSource('attractions', {
         "type": "geojson",
-        "data": attractions
+        "data": this.attractions
       });
       this.map.addSource("routes", {
         "type": "geojson",
-        "data": routes
+        "data": this.routes
       });
 
       this.map.addLayer({
@@ -82,10 +84,15 @@ export default class Map extends Component {
         }
       });
       
-      this.loadSelectedAttractions(attractions);
-      this.loadRoutes(routes);
+      //this.loadSelectedAttractions(this.attractions);
+      //this.loadRoutes(this.routes);
     });
 
+  }
+
+  componentDidUpdate() {
+    this.loadSelectedAttractions(this.attractions);
+    this.loadRoutes(this.routes);
   }
 
 
@@ -101,13 +108,45 @@ export default class Map extends Component {
   }
 
   loadRoutes(routes) {
-/*    const fakeRoutes = [
-      {geometry: "_p~iF~ps|U_ulLnnqC_mqNvxq`@"},
-      {geometry: "khnnJulbwCADe@~@Ip@"}
-    ];*/
+
+
+    if(this.props.hotelTrips){
+      const hotelIndex = 0;
+      const tripPlan = [this.props.hotelTrips[hotelIndex].hotelId];
+
+      this.props.hotelTrips[hotelIndex].days.map( (day)=>{
+        day.map((attractio)=>{
+          tripPlan.push(attractio)
+        })
+        tripPlan.push(this.props.hotelTrips[hotelIndex].hotelId)
+      })
+
+      console.log("tripPlan",tripPlan);
+
+      let polylinesEncoded = []
+      for(let i = 0; i<tripPlan.length-1; i++ ) {
+        const start = tripPlan[i];
+        const end = tripPlan[i+1];
+        const trip = this.props.trips.filter(
+          function(el) {
+            return (el.start.id==start && el.end.id==end);
+          }
+        )[0]
+        const legs = trip.data[0].legs;
+        legs.map(
+          function (leg) {
+            polylinesEncoded.push(leg.legGeometry.points);
+          }
+        )
+      }
+
+      console.log(polylinesEncoded);
+    }
+
+
     
       this.props.trips.map(function(trip) {
-        console.log("trip",trip);
+        //console.log("trip",trip);
 
         if(trip.data){
           trip.data[0].legs.map(function(leg) {
@@ -119,7 +158,7 @@ export default class Map extends Component {
             });
 
             let color;
-            console.log("leg.mode",leg.mode)
+            //console.log("leg.mode",leg.mode)
 
             switch (leg.mode) {
               case "WALK":
@@ -149,8 +188,6 @@ export default class Map extends Component {
   }
 
   loadSelectedAttractions(attractions) {
-    //Oikeesti haetaan this.props.attractions jne...
-
     this.props.attractions.map((attraction) => {
       if(attraction.selected){
         console.log("attraction");
@@ -164,7 +201,6 @@ export default class Map extends Component {
             ]
           }
         };
-        //console.log(feature);
         attractions.features.push(feature);
       }
     });
@@ -175,7 +211,8 @@ export default class Map extends Component {
 const mapStateToProps = (state) => {
   return {
     attractions: state.attractions,
-    trips: state.trips
+    trips: state.trips,
+    hotelTrips: state.hotelTrips
   };
 };
 
