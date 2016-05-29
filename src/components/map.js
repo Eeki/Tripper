@@ -77,7 +77,7 @@ export default class Map extends Component {
         },
         "paint": {
           "line-color": "#f90000",
-          "line-width": 8
+          "line-width": 1
         }
       });
       
@@ -127,8 +127,8 @@ export default class Map extends Component {
             "type": "Feature",
             "properties": {
               "stroke": color,
-              "stroke-width": 2,
-              "stroke-opacity": 3
+              "stroke-width": 1,
+              "stroke-opacity": 1
             },
             "geometry": {
               "type": "LineString",
@@ -142,16 +142,17 @@ export default class Map extends Component {
 
   loadSelectedAttractions(attractions) {
     //Oikeesti haetaan this.props.attractions jne...
-    const fakeAttractions = [{lon:24.942432,lat:60.163694, selected: true}, {lon:24.952432,lat:60.173694, selected: true}];
-    fakeAttractions.map((attraction) => {
+
+    this.props.attractions.map((attraction) => {
       if(attraction.selected){
+        console.log("attraction");
         const feature = {
           "type": "Feature",
           "geometry": {
             "type": "Point",
             "coordinates": [
-              attraction.lon,
-              attraction.lat
+              attraction.coords.lon,
+              attraction.coords.lat
             ]
           }
         };
