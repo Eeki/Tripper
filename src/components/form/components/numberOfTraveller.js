@@ -16,10 +16,10 @@ export default class NumberOfTravellers extends Component{
 
   decreaseOneTraveller() {
     console.log("decrese");
-    if(this.props.numberOfTravelers.value>0 && (this.props.numberOfTravelers.value)){
+    if(this.props.numberOfTravelers.value>1 && (this.props.numberOfTravelers.value)){
       this.props.numberOfTravelers.onChange(parseInt(this.props.numberOfTravelers.value) -1)
     }else {
-      this.props.numberOfTravelers.onChange(0)
+      this.props.numberOfTravelers.onChange(1)
     }
   }
 
@@ -36,12 +36,13 @@ export default class NumberOfTravellers extends Component{
 
 
     return(
-      <div>
+      <div className="center-block">
         <FloatingActionButton
           mini={true}
           style={buttonStyle}
           onTouchStart={(event) => {this.decreaseOneTraveller()}}
           onMouseUp={(event) => {this.decreaseOneTraveller()}}
+          backgroundColor="#f092cd"
         >
           -
         </FloatingActionButton>
@@ -49,7 +50,7 @@ export default class NumberOfTravellers extends Component{
         <TextField
           {...this.props.numberOfTravelers}
           id="numberOfTravellersTextField"
-          hintText="0"
+          hintText="1"
           style={textFieldStyle}/>
 
         <FloatingActionButton
@@ -57,6 +58,7 @@ export default class NumberOfTravellers extends Component{
           style={buttonStyle}
           onTouchStart={(event) => {this.addOneTraveller()}}
           onMouseUp={(event) => {this.addOneTraveller()}}
+          backgroundColor="#f092cd"
         >
           +
         </FloatingActionButton>

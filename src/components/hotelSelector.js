@@ -4,19 +4,33 @@ import Carousel from 'nuka-carousel';
 
 export default class HotelSelector extends Component {
 
+  findHotelInfo(id) {
+    return this.props.hotels.map((hotel) => {
+      //console.log("id", id);
+      //console.log("hotel.id", hotel.id);
+      if(id == hotel.id) {
+        return hotel
+      }
+    })
+  }
+
   renderHotels() {
-    return this.props.hotels.map( (hotel) => {
-      return (
-        <div key={hotel.name}>
-          <div  style={
+    return this.props.hotelTrips.map( (hotelTrip) => {
+      const hotel = this.findHotelInfo(hotelTrip.hotelId);
+      if(hotel){
+        console.log(hotel);
+        return (
+          <div key={hotel.name}>
+            <div  style={
           {backgroundImage: 'url(' + hotel.thumbnailUrl + ')',
           height: 20+"vh",
           backgroundSize: "cover",
           backgroundPosition: "center"
           }
           }></div>
-        </div>
-      );
+          </div>
+        );
+      }
     });
   }
 
@@ -39,7 +53,8 @@ HotelSelector.propTypes = {
 
 const mapStateToProps = (state) => {
   return {
-    hotels: state.hotels
+    hotels: state.hotels,
+    hotelTrips: state.hotelTrips
   };
 };
 

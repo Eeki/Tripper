@@ -181,7 +181,7 @@ const hotelTripsMock = [
   }
 ];
 
-export const hotelTripReducer = (state = hotelTripsMock, action) => {
+export const hotelTripsReducer = (state = hotelTripsMock, action) => {
   switch (action.type) {
     case OPTIMIZE_COMPLETE: // constiin
       return action.hotelTrips;
