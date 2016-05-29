@@ -1,3 +1,36 @@
+/* Colors */
+
+.text-primary {
+  color: #000;
+}
+.text-light {
+  color: #fff;
+}
+
+.hsl-blue {
+  color: #007ac9;
+}
+.hsl-dark-blue {
+  color: #0062a1;
+}
+.hsl-tram-green {
+  color: #00985f;
+}
+.hsl-metro-orange {
+  color: #ff6319;
+}
+.hsl-rail-purple {
+  color: #8c4799;
+}
+.hsl-ferry-blue {
+  color: #00b9e4;
+}
+.hsl-walk-teal {
+  color: #6ba3af;
+}
+.hsl-pink {
+  color: #f092cd;
+}
 
 #map {
     position: absolute;
