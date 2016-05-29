@@ -1,5 +1,6 @@
 import graphql from 'graphql-client'
 import Combinatorics from 'js-combinatorics'
+import { OPTIMIZE_COMPLETE } from './const'
 
 import { ATTRACTION, HOTEL, TRIP_ROUTE_START, TRIP_ROUTE_FAILURE, TRIP_ROUTE_SUCCESS } from './const'
 
@@ -100,7 +101,7 @@ export function fetchTrips(attractions, hotels) {
 
     Promise.all(allPossibleTrips).then((trips) => {
       dispatch(setTrips(trips));
-      dispatch(optimize(trips));
+      dispatch(setHotelTrips(optimize(trips)));
     });
   }
 }
@@ -114,40 +115,42 @@ function optimize(allTrips) {
   attractionIds = attractionIds.filter(onlyUnique);
   var hotelIds = allTrips.filter(t => t.start.type == HOTEL).map(t => t.start.id);
   hotelIds = hotelIds.filter(onlyUnique);
-  var results = [];
 
   var durationsH2A = {};
   var durationsA2A = {};
 
 
   var h2ATrips = allTrips.filter(t => (t.start.type == HOTEL) && (t.end.type=ATTRACTION));
-  var a2ATrips = allTrips.filter(t => (t.start.type == HOTEL) && (t.end.type=ATTRACTION));
+  var a2ATrips = allTrips.filter(t => (t.start.type == ATTRACTION) && (t.end.type=ATTRACTION));
   
-  for (var hotelId of hotelIds) {
-    durationsH2A[hotelId] = {};
-  }
-  for (var attractionId of attractionIds) {
-    durationsA2A.attractionId = {};
-  }
 
   for (var trip of h2ATrips) {
-    var duration = trip.data[0].duration;
-    var dur2A = durationsH2A[trip.start.id];
-    debugger;
-    durationsH2A[trip.start.id][trip.end.id] = duration;
+    if (typeof durationsH2A[trip.start.id] == 'undefined') {
+      durationsH2A[trip.start.id] = {};
+    }
+    durationsH2A[trip.start.id][trip.end.id] = trip.data[0].duration;
   }
-  for (var trip of a2ATrips) {
+  for (trip of a2ATrips) {
+    if (typeof durationsA2A[trip.start.id] == 'undefined') {
+      durationsA2A[trip.start.id] = {};
+    }
     durationsA2A[trip.start.id][trip.end.id] = trip.data[0].duration;
   }
 
-  debugger;
+  var results = [];
 
   for (var hotelId of hotelIds) {
     // fix two days, to show off
     results.push(optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, durationsA2A, 2));
   }
-  
-  
+  return results;
+}
+
+export function setHotelTrips(hotelTrips){
+  return {
+    type: OPTIMIZE_COMPLETE, // import from const
+    hotelTrips: hotelTrips
+  }
 }
 
 function optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, durationsA2A, nDays) {
