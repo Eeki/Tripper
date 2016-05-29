@@ -4,6 +4,7 @@
 
 import React, { Component } from 'react';
 import {connect} from "react-redux";
+import { Link } from 'react-router'
 var polyline = require('polyline');
 
 
@@ -90,7 +91,12 @@ export default class Map extends Component {
 
   render() {
     return (
-      <div id='map'></div>
+      <div>
+        <div className="navbar">
+          <Link to="attractionsForm">Attractions</Link>
+        </div>
+        <div id='map'></div>
+      </div>
     )
   }
 
