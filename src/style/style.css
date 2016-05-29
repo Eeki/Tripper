@@ -73,6 +73,16 @@ h1 {
     background-color: white;
 }
 
+.next-button {
+  background-color: #007ac9;
+  color: white;
+  border: 0;
+}
+
+.next-button:focus {
+  outline: 0;
+}
+
 .dateOrTimePicker{
     width: 50px;
 }

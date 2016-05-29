@@ -163,7 +163,7 @@ export const tripReducer = (state = initialState, action) => {
 
 const hotelTripsMock = [
   {
-    hotelId: 19,
+    hotelId: "a",
     duration: 150,
     days: [
       [2, 5, 1],
@@ -171,7 +171,16 @@ const hotelTripsMock = [
     ]
   },
   {
-    hotelId: 3,
+    hotelId: "j",
+    duration: 150,
+    days: [
+      [6, 1],
+      [3, 5],
+      [2]
+    ]
+  },
+  {
+    hotelId: "o",
     duration: 150,
     days: [
       [6, 1],

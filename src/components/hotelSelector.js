@@ -5,20 +5,20 @@ import Carousel from 'nuka-carousel';
 export default class HotelSelector extends Component {
 
   findHotelInfo(id) {
-    return this.props.hotels.map((hotel) => {
-      //console.log("id", id);
-      //console.log("hotel.id", hotel.id);
+    let findHotel;
+     this.props.hotels.map((hotel) => {
       if(id == hotel.id) {
-        return hotel
+        findHotel = hotel
       }
-    })
+    });
+    return findHotel
   }
 
   renderHotels() {
     return this.props.hotelTrips.map( (hotelTrip) => {
       const hotel = this.findHotelInfo(hotelTrip.hotelId);
       if(hotel){
-        console.log(hotel);
+        console.log("hotel",hotel);
         return (
           <div key={hotel.name}>
             <div  style={
