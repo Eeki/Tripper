@@ -20,3 +20,5 @@ export const OPTIMIZE_COMPLETE = "OPTIMIZE_COMPLETE";
 export const HOTEL = 'HOTEL';
 export const LUNCH = 'LUNCH';
 export const ATTRACTION = 'ATTRACTION';
+
+export const CHANGE_HOTEL = 'CHANGE_HOTEL';

@@ -2,50 +2,56 @@ import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import Carousel from 'nuka-carousel';
 
+import { changeHotel } from '../actions/hotels'
+
 export default class HotelSelector extends Component {
 
   findHotelInfo(id) {
     let findHotel;
-     this.props.hotels.map((hotel) => {
-      if(id == hotel.id) {
+    this.props.hotels.map((hotel) => {
+      if (id == hotel.id) {
         findHotel = hotel
       }
     });
-    return findHotel
+    return findHotel;
   }
 
   renderHotels() {
-    if(this.props.hotelTrips){
-      return this.props.hotelTrips.map( (hotelTrip) => {
-        const hotel = this.findHotelInfo(hotelTrip.hotelId);
-        if(hotel){
-          //console.log("hotel",hotel);
-          return (
-            <div key={hotel.name}>
-              <div  style={
-          {backgroundImage: 'url(' + hotel.thumbnailUrl + ')',
-          height: 20+"vh",
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-          }
-          }></div>
-            </div>
-          );
-        }
-      });
-    }
-
+    return this.props.hotelTrips.map( (hotelTrip) => {
+      const hotel = this.findHotelInfo(hotelTrip.hotelId);
+      if (hotel) {
+        console.log("hotel",hotel);
+        return (
+          <div key={hotel.id}>
+            <div style={
+              {
+                backgroundImage: 'url(' + hotel.thumbnailUrl + ')',
+                height: 20+"vh",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }
+            }/>
+          </div>
+        );
+      }
+    });
   }
 
 
   render() {
-    return(
+    return (
       <div className="hotel-selector">
-        <Carousel slideWidth={0.9} cellAlign="center">
+        <Carousel 
+          slideWidth={0.9}
+          cellAlign="center"
+          beforeSlide={(previous, id) => {
+            this.props.changeHotel(this.props.hotelTrips[id].hotelId);
+          }}
+        >
           {this.renderHotels()}
         </Carousel>
       </div>
-    )
+    );
   }
 
 }
@@ -61,4 +67,15 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(HotelSelector);
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeHotel: (id) => {
+      dispatch(changeHotel(id));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HotelSelector);

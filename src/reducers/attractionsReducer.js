@@ -28,4 +28,4 @@ export const attractionsReducer = (state = attractions, action) => {
         return state;
       }
   }
-}
+};
