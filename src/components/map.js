@@ -103,40 +103,42 @@ export default class Map extends Component {
       this.props.trips.map(function(trip) {
         console.log("trip",trip);
 
-        trip.data[0].legs.map(function(leg) {
+        if(trip.data){
+          trip.data[0].legs.map(function(leg) {
 
-          const polyLineArray = polyline.decode(leg.legGeometry.points)
-          const reversepolyLineArray = [];
-          polyLineArray.map(function(coords) {
-            reversepolyLineArray.push([coords[1], coords[0]])
-          });
+            const polyLineArray = polyline.decode(leg.legGeometry.points)
+            const reversepolyLineArray = [];
+            polyLineArray.map(function(coords) {
+              reversepolyLineArray.push([coords[1], coords[0]])
+            });
 
-          let color;
-          console.log("leg.mode",leg.mode)
+            let color;
+            console.log("leg.mode",leg.mode)
 
-          switch (leg.mode) {
-            case "WALK":
-              color = "#000000";
-              break;
-            default:
-              color = "#f90000";
-              break;
-          }
-
-          const feature = {
-            "type": "Feature",
-            "properties": {
-              "stroke": color,
-              "stroke-width": 1,
-              "stroke-opacity": 1
-            },
-            "geometry": {
-              "type": "LineString",
-              "coordinates": reversepolyLineArray
+            switch (leg.mode) {
+              case "WALK":
+                color = "#000000";
+                break;
+              default:
+                color = "#f90000";
+                break;
             }
-          }
-          routes.features.push(feature);
-        });
+
+            const feature = {
+              "type": "Feature",
+              "properties": {
+                "stroke": color,
+                "stroke-width": 1,
+                "stroke-opacity": 1
+              },
+              "geometry": {
+                "type": "LineString",
+                "coordinates": reversepolyLineArray
+              }
+            }
+            routes.features.push(feature);
+          });
+        }
     })
   }
 
