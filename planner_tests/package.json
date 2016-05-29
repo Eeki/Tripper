@@ -15,6 +15,7 @@
     "turf": "3.0.5",
     "node-fetch": "",
     "lokka": "1.7.0",
-    "lokka-transport-http" : ""
+    "lokka-transport-http" : "",
+    "js-combinatorics": "0.5.2"
   }
 }

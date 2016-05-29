@@ -3,7 +3,7 @@ const turf = require("turf");
 const fetch = require("node-fetch");
 const Lokka = require('lokka').Lokka;
 const Transport = require('lokka-transport-http').Transport;
-
+const Combinatorics = require('js-combinatorics');
 
 var attractions = [
     {
@@ -109,44 +109,49 @@ var testHotels = [
 
 // get addresses
 
-var geocoding_api_endpoint = "http://api.digitransit.fi/geocoding/v1/search"
+var geocoding = false;
+if (geocoding) {
 
-function addLatsAndLons(iterable) {
-    return iterable.map(
-        function (location) {
-            var query = geocoding_api_endpoint + "?" + "text=" + location.address + "&size=1"
-            return fetch(encodeURI(query))
-                .then(function (response) {
-                    return response.json();
-                }).then(function (json) {
-                    var coordinates = json.features[0].geometry.coordinates;
-                    return Object.assign({}, location, {lat: coordinates[1], lon: coordinates[0]});
-                }).catch(function (reason) {
-                    console.log(location);
-                    console.log(reason);
-                    return Object.assign({}, location)
-                })
-        }
-    )
-};
+    var geocoding_api_endpoint = "http://api.digitransit.fi/geocoding/v1/search";
 
-
-var attractionPromises = addLatsAndLons(attractions)
-var hotelPromises = addLatsAndLons(testHotels)
-
-Promise.all(hotelPromises).then(
-    function () {
-        console.log("hotelPromises")
-        Promise.all(attractionPromises).then(
-            function () {
-                console.log("Both ready!")
+    function addLatsAndLons(iterable) {
+        return iterable.map(
+            function (location) {
+                var query = geocoding_api_endpoint + "?" + "text=" + location.address + "&size=1";
+                return fetch(encodeURI(query))
+                    .then(function (response) {
+                        return response.json();
+                    }).then(function (json) {
+                        var coordinates = json.features[0].geometry.coordinates;
+                        return Object.assign({}, location, {lat: coordinates[1], lon: coordinates[0]});
+                    }).catch(function (reason) {
+                        console.log(location);
+                        console.log(reason);
+                        return Object.assign({}, location)
+                    })
             }
         )
     }
-);
+    var attractionPromises = addLatsAndLons(attractions);
+    var hotelPromises = addLatsAndLons(testHotels);
+
+    Promise.all(hotelPromises).then(
+        function () {
+            console.log("hotelPromises");
+            Promise.all(attractionPromises).then(
+                function () {
+                    console.log("Both ready!")
+                }
+            )
+        }
+    );
+
+}
 
 
 
+
+/*
 
 var hslGQLEndPoint = "https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql";
 
@@ -194,12 +199,107 @@ graphQLHSLClient.query(query_base)
     })
 ;
 
+ */
 
-function optimize(hotel, attractions, arrivalTime, departureTime) {
-    return time
+
+function optimizeOneDay(hotelId, attractionIds, durationsH2A, durationsA2A) {
+    var bestFound = {
+        duration: Infinity,
+        order: null
+    };
+    var permutations = Combinatorics.permutation(attractionIds);
+    var permutationArray = permutations.toArray();
+    for (var permutation of permutationArray) {
+        console.log("new permutation");
+        var dur = evaluateDayOrder(hotelId, permutation, durationsH2A, durationsA2A);
+        if (dur < bestFound.duration) {
+            console.log("found better");
+            bestFound.duration = dur;
+            bestFound.order = permutation;
+        }
+        console.log(bestFound.duration)
+    }
+    return bestFound;
 }
 
-function getFullRoute(hotel, attractions, arrival) {
-    // optimize first again
-    //
+
+
+function optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, durationsA2A, nDays) {
+    var nAttractionsPerDay = Math.trunc(attractionIds.length/nDays+1);
+    // this is by far not optimized! (better approach would be to
+    // first compute all the possible groupSplits with nDays
+    // and then focus on
+    var bestSoFar = {
+        duration: Infinity,
+        dayOrders: null
+    };
+    var attractionPermutations = Combinatorics.permutation(attractionIds).toArray();
+    for (var permutation of attractionPermutations) {
+        var dayOrders = [];
+        var totAttractions = 0;
+        while (totAttractions < attractionIds.length) {
+            var untilAttractionIndex = Math.min(totAttractions+nAttractionsPerDay, permutation.length);
+            var order = permutation.slice(totAttractions, untilAttractionIndex);
+            dayOrders.push(order);
+            totAttractions += nAttractionsPerDay;
+        }
+        var evaluatedDuration = 0;
+        for (var attractionDayOrder of dayOrders) {
+            evaluatedDuration += evaluateDayOrder(hotelId, attractionDayOrder, durationsH2A, durationsA2A);
+        }
+        if (evaluatedDuration < bestSoFar.duration) {
+            bestSoFar.duration = evaluatedDuration;
+            bestSoFar.dayOrders = dayOrders;
+        }
+        console.log(permutation, dayOrders);
+        console.log("multiple duration", bestSoFar.duration);
+    }
+    return bestSoFar;
 }
+
+function evaluateDayOrder(hotelId, attractionsOrder, durationsH2A, durationsA2A) {
+    var totDuration = 0;
+    totDuration += durationsH2A[hotelId][attractionsOrder[0]];
+    for (var i=0; i < attractionsOrder.length-1; i++) {
+        var startLocId = attractionsOrder[i];
+        var endLocId = attractionsOrder[i+1];
+        console.log(durationsA2A);
+        totDuration += durationsA2A[startLocId][endLocId];
+    }
+    totDuration += durationsH2A[hotelId][attractionsOrder[attractionsOrder.length-1]];
+    return totDuration
+}
+
+var hotelId = 10;
+var attractionIds = [1,3,4];
+var nDays = 2;
+var durationsH2A = {
+    10: {
+        1: 10,
+        3: 20,
+        4: 10
+    },
+    20: {
+        1: 200,
+        3: 40,
+        4: 20
+    }
+};
+
+var durationsA2A = {
+    1: {
+        3: 20,
+        4: 2
+    },
+    3: {
+        1: 14,
+        4: 10
+    },
+    4: {
+        3: 14,
+        4: 2
+    }
+};
+
+// optimizeOneDay(hotelId, attractionIds, durationsH2A, durationsA2A);
+optimizeMultipleDaysHeuristic(hotelId, attractionIds, durationsH2A, durationsA2A, nDays);
