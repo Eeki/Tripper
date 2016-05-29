@@ -17,10 +17,9 @@ export default class HotelSelector extends Component {
   }
 
   renderHotels() {
-    return this.props.hotelTrips.map( (hotelTrip) => {
+    return this.props.hotelTrips.map((hotelTrip) => {
       const hotel = this.findHotelInfo(hotelTrip.hotelId);
       if (hotel) {
-        console.log("hotel",hotel);
         return (
           <div key={hotel.id}>
             <div style={
@@ -39,17 +38,22 @@ export default class HotelSelector extends Component {
 
 
   render() {
+    const hotel = this.findHotelInfo(this.props.hotelTrips[0].hotelId);
     return (
-      <div className="hotel-selector">
-        <Carousel 
-          slideWidth={0.9}
-          cellAlign="center"
-          beforeSlide={(previous, id) => {
-            this.props.changeHotel(this.props.hotelTrips[id].hotelId);
-          }}
-        >
-          {this.renderHotels()}
-        </Carousel>
+      <div style={
+        {
+          padding: '2vh',
+          color: 'white',
+          position: 'fixed',
+          left: '0px',
+          bottom: '0px',
+          backgroundImage: 'url(' + hotel.thumbnailUrl + ')',
+          height: '20vh',
+          width: '100%',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }
+      }>{hotel.name}
       </div>
     );
   }
