@@ -3,7 +3,6 @@
  */
 
 import React, { Component } from 'react';
-import {connect} from "react-redux";
 import { Link } from 'react-router'
 var polyline = require('polyline');
 
@@ -51,10 +50,12 @@ export default class Map extends Component {
     
     //###########MAPONLOAD###########//
     this.map.on('load', () => {
+
       this.map.addSource('attractions', {
         "type": "geojson",
         "data": this.attractions
       });
+
       this.map.addSource("routes", {
         "type": "geojson",
         "data": this.routes
@@ -70,18 +71,31 @@ export default class Map extends Component {
         }
       });
 
-      this.map.addLayer({
-        "id": "routes",
-        "type": "line",
-        "source": "routes",
-        "layout": {
-          "line-join": "round",
-          "line-cap": "round"
-        },
-        "paint": {
-          "line-color": "#f90000",
-          "line-width": 1
-        }
+      const layers =[
+        {mode:"WALK", color:"#000"},
+        {mode:"BUS", color:"#007ac9"},
+        {mode:"TRAM", color:"#00985f"},
+        {mode:"METRO", color:"#ff6319"},
+        {mode:"FERRY", color:"#00b9e4"},
+        {mode:"RAIL", color:"#8c4799"},
+      ];
+
+      layers.map((layer, i)=>{
+        this.map.addLayer({
+          "id": "route-"+i,
+          "type": "line",
+          "source": "routes",
+          "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+          },
+          "paint": {
+            "line-color": layer.color,
+            "line-width": 2
+          },
+          "filter": ['==', 'mode', layer.mode]
+        });
+        //this.map.setFilter("route-" + i, ['==', 'mode', layer.mode])
       });
       
       this.loadSelectedAttractions(this.attractions);
@@ -90,17 +104,20 @@ export default class Map extends Component {
 
   }
 
-
- /* componentWillReceiveProps(nextProps) {
-    console.log("nextProps",nextProps);
-    if(nextProps.trips || nextProps.type == "FeatureCollection") {
-      this.loadSelectedAttractions(this.attractions);
-      this.loadRoutes(this.routes);
-    }
-  }*/
-
-
-
+  componentWillReceiveProps(nextProps) {
+    console.log("componentWillReceiveProps", nextProps);
+    this.routes = {
+      "type": "FeatureCollection",
+      "features": []
+    };
+    this.attractions = {
+      "type": "FeatureCollection",
+      "features": []
+    };
+    
+    this.loadSelectedAttractions(this.attractions);
+    this.loadRoutes(this.routes);
+  }
 
   render() {
     return (
@@ -114,112 +131,49 @@ export default class Map extends Component {
   }
 
   loadRoutes(routes) {
+    const hotelIndex = 0; //<--Paras hotelli on ekana
+    const tripPlan = [{id: this.props.hotelTrips[hotelIndex].hotelId, day: 0}];
 
-
-    if(this.props.hotelTrips){
-      const hotelIndex = 0;
-      const tripPlan = [this.props.hotelTrips[hotelIndex].hotelId];
-
-      this.props.hotelTrips[hotelIndex].days.map( (day)=>{
-        day.map((attractio)=>{
-          tripPlan.push(attractio)
-        });
-        tripPlan.push(this.props.hotelTrips[hotelIndex].hotelId)
+    this.props.hotelTrips[hotelIndex].days.map( (day,i)=>{
+      day.map((attraction)=>{
+        tripPlan.push({id: attraction, day: i})
       });
+      tripPlan.push({id: this.props.hotelTrips[hotelIndex].hotelId, day: i})
+    });
 
-      //console.log("tripPlan",tripPlan);
+    let polylinesEncoded = [];
+    for(let i = 0; i<tripPlan.length-1; i++ ) {
+      const start = tripPlan[i].id;
+      const end = tripPlan[i+1].id;
 
-      let polylinesEncoded = [];
-      for(let i = 0; i<tripPlan.length-1; i++ ) {
-        const start = tripPlan[i];
-        const end = tripPlan[i+1];
-        const trip = this.props.trips.filter(
-          function(el) {
-            return (el.start.id==start && el.end.id==end);
-          }
-        )[0];
-
-        if (trip.data == "undefined") {
-          continue;
+      const filteredTrip = this.props.trips.filter(
+        function(el) {
+          return (el.start.id==start && el.end.id==end);
         }
-        const legs = trip.data[0].legs;
-        legs.map(
-          function (leg) {
-            polylinesEncoded.push(polyline.decode(leg.legGeometry.points));
-            //console.log("AAAAAAAA",polyline.decode(leg.legGeometry.points))
-          }
-        )
-      }
-      polylinesEncoded = [].concat.apply([], polylinesEncoded);
+      )[0];
 
+      filteredTrip.data[0].legs.map(function (leg) {
+          polylinesEncoded.push(
+            {coords: polyline.decode(leg.legGeometry.points), mode: leg.mode, day:tripPlan[i].day}
+          );
+        })
+    }
 
-      //console.log(polylinesEncoded);
-      const reversepolyLineArray = [];
-      polylinesEncoded.map(function(coords) {
-        reversepolyLineArray.push([coords[1], coords[0]])
-      });
-
-
-
+    polylinesEncoded.map((route)=>{
       const feature = {
         "type": "Feature",
         "properties": {
-          "stroke": "#f90000",
-          "stroke-width": 1,
-          "stroke-opacity": 1
+          "mode": route.mode,
+          "day": route.day
         },
         "geometry": {
           "type": "LineString",
-          "coordinates": reversepolyLineArray
+          "coordinates": this.reverseLatLonInArray(route.coords)
         }
-      }
-      routes.features[0] = feature;
-      console.log("routes",routes)
-
-
-    }
-
-
-      /*this.props.trips.map(function(trip) {
-        //console.log("trip",trip);
-
-        if(trip.data){
-          trip.data[0].legs.map(function(leg) {
-
-            const polyLineArray = polyline.decode(leg.legGeometry.points)
-            const reversepolyLineArray = [];
-            polyLineArray.map(function(coords) {
-              reversepolyLineArray.push([coords[1], coords[0]])
-            });
-
-            let color;
-            //console.log("leg.mode",leg.mode)
-
-            switch (leg.mode) {
-              case "WALK":
-                color = "#000000";
-                break;
-              default:
-                color = "#f90000";
-                break;
-            }
-
-            const feature = {
-              "type": "Feature",
-              "properties": {
-                "stroke": color,
-                "stroke-width": 1,
-                "stroke-opacity": 1
-              },
-              "geometry": {
-                "type": "LineString",
-                "coordinates": reversepolyLineArray
-              }
-            }
-            routes.features.push(feature);
-          });
-        }
-    })*/
+      };
+      routes.features.push(feature);
+    });
+    console.log(routes);
   }
 
   loadSelectedAttractions(attractions) {
@@ -241,15 +195,17 @@ export default class Map extends Component {
     });
   }
 
+  //##########################//
+  //    Helper functions      //
+  //##########################//
+
+  reverseLatLonInArray(array) {
+    let reversed = [];
+    array.map(function(coords) {
+      reversed.push([coords[1], coords[0]])
+    });
+    return reversed;
+  }
+
 }
-
-const mapStateToProps = (state) => {
-  return {
-    attractions: state.attractions,
-    trips: state.trips,
-    hotelTrips: state.hotelTrips
-  };
-};
-
-export default connect(mapStateToProps)(Map);
 

@@ -152,7 +152,7 @@ const initialState = [
 ];
 
 
-export const tripReducer = (state = initialState, action) => {
+export const tripReducer = (state = null, action) => {
   switch (action.type) {
     case TRIP_ROUTE_SUCCESS:
       return action.trips;
@@ -171,7 +171,7 @@ const hotelTripsMock = [
   }
 ];
 
-export const hotelTripsReducer = (state=hotelTripsMock, action) => {
+export const hotelTripsReducer = (state = null, action) => {
   switch (action.type) {
     case OPTIMIZE_COMPLETE: // constiin
       return action.hotelTrips;

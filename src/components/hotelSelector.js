@@ -20,7 +20,6 @@ export default class HotelSelector extends Component {
     return this.props.hotelTrips.map( (hotelTrip) => {
       const hotel = this.findHotelInfo(hotelTrip.hotelId);
       if (hotel) {
-        //console.log("hotel",hotel);
         return (
           <div key={hotel.id}>
             <div style={
@@ -30,14 +29,17 @@ export default class HotelSelector extends Component {
                 backgroundSize: "cover",
                 backgroundPosition: "center"
               }
-            }/>
+            }>
+              <p>{hotel.name}</p>
+              <p>{hotel.price} €</p>
+            </div>
+
           </div>
         );
       }
     });
   }
-
-
+  
   render() {
     return (
       <div className="hotel-selector">
@@ -60,12 +62,7 @@ HotelSelector.propTypes = {
   hotels: PropTypes.array.isRequired
 };
 
-const mapStateToProps = (state) => {
-  return {
-    hotels: state.hotels,
-    hotelTrips: state.hotelTrips
-  };
-};
+
 
 const mapDispatchToProps = (dispatch) => {
   return {
@@ -75,7 +72,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(HotelSelector);
+export default connect(mapDispatchToProps)(HotelSelector);
